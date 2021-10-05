@@ -1,0 +1,50 @@
+@use 'partials/partials' as *;
+@use 'partials/mixins' as *;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    @include flexed(column);
+    margin: 0 20px;
+
+    @include mobile {
+        //TODO add Nav, HERO, ABOUT, PHOTO_GALLERY, FOOTER
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    &__item {
+        text-align: center;
+        background-color: lightblue;
+        margin: 20px 0;
+        padding: 20px 0;
+        font-size: 5rem;
+        border-radius: 5px;
+        @include mobile {
+            width: 40%;
+            margin: 3vw 0;
+            background-color: lightgreen;
+        }
+        @include desktop {
+            width: 30%;
+            margin: 1.25vw 0;
+            background-color: lightpink;
+          }
+    }
+}
+
+@include tablet {
+    .gallery {
+      &__item {
+        width: 30%;
+        margin: 1.25vw 0;
+        background-color: red;
+      }
+    }
+}
+
