@@ -62,7 +62,7 @@ html, body {
 }  .about {
     padding-right: 1rem;
     padding-left: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 
 }  .about-img {
     padding-bottom: 1rem;
@@ -70,7 +70,11 @@ html, body {
 }  .about-title {
     margin: 0;
 
-}  .about-band__img{
+}  .about-quote__the-bees{
+    padding-bottom: 1rem;
+}   .about-quote__author{
+    padding-bottom: 1rem;
+}   .about-band__img{
     width: 100%;
     height: auto;
     z-index: 1;
@@ -80,6 +84,7 @@ html, body {
 }   .photos {
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-top: 1.5rem;
     background-color: #e1e1e1;
 
 }   .photos-title {
@@ -94,7 +99,12 @@ html, body {
     /* Footer-Section */
 }   .footer {
     background-color: #323232;
-}   .footer-title {
+}   .footer-info {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    color: white;   
+}  .footer-title {
     color: white;
 }   .footer-logo {
     background-image: url(/assets//Logo/Logo-bandsite.svg);
@@ -102,9 +112,44 @@ html, body {
     background-repeat: no-repeat;
     padding: 1rem;
    
-}   .footer-logos__img{
-    background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
+}   .footer-info__websites{
+    display: flex;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}   .footer-info__instagram{
+    background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}  .footer-info__facebook{
+    background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}   .footer-info__twitter{
+    background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+}   .footer-list {
+    list-style-type: none;
+}   .footer-list__email {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}   .footer-list__name2 {
+    padding-bottom: 1rem;
+}   .footer-logo {
+    padding-top: 1.5rem;
+    padding-bottom: 1r  em;
+    height: 1.5rem;
+}   .copyright {
+    padding-bottom: 1rem;
 }
+
+
 
 
 
