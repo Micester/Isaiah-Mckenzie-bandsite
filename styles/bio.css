@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dotted black;
+}
+
 html, body {
   margin: 0;
   padding: 0;
+  border: 1px dotted black;
 }
 
 /* mobile */
@@ -15,25 +22,33 @@ html, body {
     /* Navigation-Section */
     .nav {
       background-color: #323232;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding: .8rem;
       text-align: center;
     }
+}   .nav-logo {
+    background-image: url(/assets//Logo/Logo-bandsite.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+  
 }   .nav-bar {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-}  .nav-bar__links {
+    padding-top: 1rem;
+   
+}   .nav-bar__links {
     text-decoration: none;
     color: white;
 
 
-
     /* Hero-Section */
-    /* Image responsiveness */
-}   .hero {
+}  .hero {
     opacity: 50%;
-}   .hero-title__img{
+    margin-top: -4.21rem;
+    padding-bottom: 1.5rem;
+
+}  .hero-title__img{
     width: 100%;
     height: auto;
     z-index: 1;
@@ -44,16 +59,49 @@ html, body {
     color: #FFFFFF;
 
     /* About-Section */
-}   .about-band__img{
+}  .about {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+
+}  .about-img {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}  .about-title {
+    margin: 0;
+
+}  .about-band__img{
     width: 100%;
     height: auto;
     z-index: 1;
+
+
+    /* Photos-Section */
+}   .photos {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #e1e1e1;
+
+}   .photos-title {
+    padding-bottom: 1rem;
+}   .photos-imgs {
+    padding-bottom: 1rem;
+
 }   .photos-imgs__ {
     width: 100%;
     height: auto;
 
-
     /* Footer-Section */
+}   .footer {
+    background-color: #323232;
+}   .footer-title {
+    color: white;
+}   .footer-logo {
+    background-image: url(/assets//Logo/Logo-bandsite.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 1rem;
+   
 }   .footer-logos__img{
     background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
 }
