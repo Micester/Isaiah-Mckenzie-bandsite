@@ -135,6 +135,7 @@ html, body {
         /* Footer-Section */
     }   .footer {
         background-color: #323232;
+        color: white;
     }   .footer-info {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -204,7 +205,7 @@ html, body {
 
 
 /* Tablet */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     html, body {
         margin: 0;
         padding: 0;
@@ -321,7 +322,6 @@ html, body {
     }   .tablet-about {
         display: flex;
 
-
         /* Photos-Section */
     }   .photos-img {
         display: grid;
@@ -353,29 +353,41 @@ html, body {
         /* Footer-Section */
     }   .footer {
         background-color: #323232;
-    }   .footer-info {
+        color: white;
         padding-right: 2.5rem;
         padding-left: 2.5rem;
-        padding-top: 1.5rem;
+        padding-top: 3rem;
+    
+
+    }   .footer-info {
         color: white;   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
 
     }  .footer-title {
         color: white;
         font-size: 36px;
         line-height: 44px;
         font-weight: 700;
+        width: 35%;
 
     }   .footer-logo {
+        display: none
+       
+    }   .footer-logo__tablet{
         background-image: url(/assets//Logo/Logo-bandsite.svg);
         background-position: left;
         background-repeat: no-repeat;
         padding: 1rem;
-       
+        width: 13%;
+        
     }   .footer-info__websites{
         display: flex;
-        padding-right: 2.5rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-right: 5.5rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
 
     }   .footer-info__instagram{
         background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
@@ -401,15 +413,15 @@ html, body {
         font-size: 14px;
         line-height: 20px;
         font-weight: 400;
+        padding-top: 3rem;
 
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
     }   .footer-list {
         list-style-type: none;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: (3, 5rem);
-        grid-gap: 5px 20px;
-        
-
     
     }   .footer-list__email {
         padding-top: 1rem;
@@ -418,14 +430,10 @@ html, body {
     }   .footer-list__name2 {
         padding-bottom: 1rem;
 
-    }   .footer-logo {
-        padding-top: 1.5rem;
-        padding-bottom: 1r  em;
-        height: 1.5rem;
-
     }   .copyright {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
+        width: 100%;
     }
 }   
 
