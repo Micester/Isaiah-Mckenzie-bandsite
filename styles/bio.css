@@ -26,8 +26,7 @@ html, body {
       padding-bottom: 1.5;
       text-align: center;
 
-    }
-    .nav-logo {
+    }.nav-logo {
         background-image: url(/assets//Logo/Logo-bandsite.svg);
         background-color: #323232;
         background-position: center;
@@ -36,162 +35,181 @@ html, body {
         max-height: 1.25rem;
         height: 7.5rem;
     
-      
-    }   .nav-bar {
+    }.nav-bar {
         list-style-type: none;
         justify-content: space-around;
-        
         display: flex;
         overflow: hidden;
         width: 100%;
         padding-top: 1rem;
         padding-bottom: 1rem;
     
-    }   .nav-bar__links {
+    }.nav-bar__links {
         text-decoration: none;
         color: white;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
     
-    
         /* Hero-Section */
-    }  .hero {
+    }.hero {
         opacity: 50%;
         margin-top: -1.4rem;
         padding-bottom: 1.5rem;
         font-size: 24px;
         line-height: 22px;
         font-weight: 600;
+        margin: auto 0;
     
-    }  .hero-title__img{
+    }.hero-title__img{
         width: 100%;
         height: auto;
         z-index: 1;
-    }  .hero-title {
+
+    }.hero-title {
         z-index: 2;
         padding-left: 1rem;
         transform: translateY(7.5rem);
         color: #FFFFFF;
+        position: absolute;
     
         /* About-Section */
-    }   .about {
+    }.about {
         padding-right: 1rem;
         padding-left: 1rem;
         padding-bottom: 1rem;
     
-    }  .about-img {
+    }.about-img {
         padding-bottom: 1rem;
         padding-top: 1rem;
         
-    }  .about-title {
+    }.about-title {
         margin: 0;
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
     
-    }   .about-quote__quote, .about-quote__author {
+    }.about-quote__quote, .about-quote__author {
         font-size: 14px;
         line-height: 32px;
         font-weight: 700;
-    }   .about-quote__the-bees{
+
+    }.about-quote__the-bees{
         font-size: 14px;
         line-height: 22px;
         font-weight: demi 600;
         padding-bottom: 1rem;
-    }   .about-quote__author{
+
+    }.about-quote__author{
         padding-bottom: 1rem;
-    }   .about-text{
+
+    }.about-text{
         font-size: 13px;
         line-height: 18px;
         font-weight: 400
-    }  .about-band__img{
+
+    }.about-band__img{
         width: 100%;
         height: auto;
         z-index: 1;
     
-    
         /* Photos-Section */
-    }   .photos {
+    }.photos {
         padding-right: 1rem;
         padding-left: 1rem;
         padding-top: 1.5rem;
-        background-color:   #fafafa;
-      
+        background-color: #fafafa;
     
-    }   .photos-title {
+    }.photos-title {
         padding-bottom: 1rem;
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
     
-    }   .photos-imgs {
+    }.photos-imgs {
         padding-bottom: 1rem;
     
-    }   .photos-imgs__ {
+    }.photos-imgs__ {
         width: 100%;
         height: auto;
     
         /* Footer-Section */
-    }   .footer {
+    }.footer {
         background-color: #323232;
         color: white;
-    }   .footer-info {
+
+    }.footer-info {
         padding-right: 1rem;
         padding-left: 1rem;
         padding-top: 1.5rem;
         color: white;   
-    }  .footer-title {
+
+    }.footer-title {
         color: white;
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
-    }   .footer-logo {
+
+    }.footer-logo {
         background-image: url(/assets//Logo/Logo-bandsite.svg);
         background-position: left;
         background-repeat: no-repeat;
         padding: 1rem;
        
-    }   .footer-info__websites{
+    }.footer-info__websites{
         display: flex;
         padding-right: 1rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-    }   .footer-info__instagram{
+
+    }.footer-info__instagram{
         background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
         background-repeat: no-repeat;
         padding-right: 1rem;
         width: 2rem;
         height: 2rem;
-    }  .footer-info__facebook{
+
+    }.footer-info__facebook{
         background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
         background-repeat: no-repeat;
         padding-right: 1rem;
         width: 2rem;
         height: 2rem;
-    }   .footer-info__twitter{
+
+    }.footer-info__twitter{
         background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
         background-repeat: no-repeat;
         width: 2rem;
         height: 2rem;
-    }   .footer-info__socials{
+
+    }.footer-info__socials{
         font-size: 13px;
         line-height: 18px;
         font-weight: 400;
-    }   .footer-list {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }.footer-list {
         list-style-type: none;
-    }   .footer-list__email {
+
+    }.footer-list__email {
         padding-top: 1rem;
         padding-bottom: 1.5rem;
-    }   .footer-list__name2 {
+
+    }.footer-list__name2 {
         padding-bottom: 1rem;
-    }   .footer-logo {
+
+    }.footer-logo {
         padding-top: 1.5rem;
         padding-bottom: 1r  em;
         height: 1.5rem;
-    }   .copyright {
+
+    }.copyright {
         padding-top: 0.5rem;
         padding-bottom: 1rem;
+
+    }.footer-logo__mobile{
+        padding-top: 3rem;
     }
 }   
 
@@ -211,231 +229,244 @@ html, body {
         padding: 0;
         /* padding-right: 1rem;
         padding-left: 1rem; */
-      } .nav {
+
+      }.nav {
         background-color: #323232;
-        padding-bottom: 1.5;
         text-align: center;
-        margin: -4rem;
+        padding: 2.25rem;
 
-      }   .nav-logo {
-          background-image: url(/assets//Logo/Logo-bandsite.svg);
-          background-color: #323232;
-          background-position: left;
-          position: absolute;
-          z-index: 1;
-          width: 100%;
+      }.nav-logo {
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-color: #323232;
+        background-position: left;
+        position: absolute;
+        z-index: 1;
+        width: 33%;
+        display: none;
 
-      }   .nav-bar {
-          list-style-type: none;
-          justify-content: space-around;
-          
-          display: flex;
-          overflow: hidden;
-          width: 100%;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-    
-      }   .nav-bar__links {
-          text-decoration: none;
-          color: white;
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 20px;
-      
-    
-       /* Hero-Section */
-    }  .hero {
-        opacity: 50%;
-        padding-top: 2.8rem;
-        padding-bottom: 3rem;
+      }.nav-bar {
+        list-style-type: none;
+        justify-content: center;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 120px 20px;
        
-    }  .hero-title__img{
+      }.nav-bar__link{
+        margin-right: 5rem;
+    
+      }.nav-bar__links {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+      
+       /* Hero-Section */
+    }.hero {
+        opacity: 50%;
+        padding-bottom: 3rem;
+        margin: auto 0;
+
+    }.hero-title__img{
         width: 100%;
         height: auto;
         z-index: 1;
-
-    }  .hero-title {
+        position: relative;
+        
+    }.hero-title {
         z-index: 2;
         padding-left: 1rem;
-        transform: translateY(16.5rem);
-        position: absolute;
         color: #FFFFFF;
-    
+        font-size: 60px;
+        line-height: 68px;
+        font-weight: 700;
+        position: absolute;
+
         /* About-Section */
-    }   .about {
+    }.about {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
         padding-bottom: 2.25rem;
     
-    }  .about-img {
+    }.about-img {
         padding-bottom: 2.25rem;
         padding-top: 2.25rem;
-        
-    }  .about-title {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+
+    }.about-title {
         margin: 0;
         font-size: 36px;
         line-height: 44px;
         font-weight: 700;
     
-    }   .about-quote__quote, .about-quote__author {
+    }.about-quote{
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+    }.about-quote__quote, .about-quote__author {
         font-size: 24px;
         line-height: 32px;
         font-weight: 600;
-    }   .about-quote__the-bees{
+
+    }.about-quote__the-bees{
         font-size: 24px;
         line-height: 32px;
         font-weight: demi 600;
-        padding-bottom: 2.25rem;
-    }   .about-quote__author{
+        padding-bottom: 1rem;
+
+    }.about-quote__author{
         font-size: 14px;
         line-height: 44px;
         font-weight: 400;
         padding-bottom: 2.25rem;
-    }   .about-text{
+
+    }.about-text{
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;
        
-    
-        
-    }   .about-text1{
+    }.about-text1{
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;
        
-       
-    
-        
-    } .about-band__img{
+    }.about-band__img{
         width: 100%;
         height: auto;
         z-index: 1;
-    }  .tablet-about__text{
+
+    }.tablet-about__text{
         display: flex;
         width: 80%;
         padding-right: 2.5rem;
-    }  .tablet-about__text1{
+
+    }.tablet-about__text1{
         display: flex;
         width: 80%;
         padding-left: 2.5rem;
         
-    }   .tablet-about {
+    }.tablet-about {
         display: flex;
 
         /* Photos-Section */
-    }   .photos-img {
+    }.photos-img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 10rem);
         grid-gap: 0px 20px;
 
-    }   .photos {
+    }.photos {
         padding-right: 2.5rem;
         padding-left: 2.5rem;
         padding-top: 3rem;
         background-color:   #fafafa;
-      
     
-    }   .photos-title {
+    }.photos-title {
         padding-bottom: 2.5rem;
         font-size: 36px;
         line-height: 44px;
         font-weight: 700;
     
-    }   .photos-imgs {
+    }.photos-imgs {
         padding-bottom: 2.5rem;
     
-    }   .photos-imgs__ {
+    }.photos-imgs__ {
         width: 100%;
-        height: auto;
-
+        height: auto
     
         /* Footer-Section */
-    }   .footer {
+    }.footer {
         background-color: #323232;
         color: white;
         padding-right: 2.5rem;
         padding-left: 2.5rem;
         padding-top: 3rem;
     
-
-    }   .footer-info {
+    }.footer-info {
         color: white;   
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items:flex-end;
         padding: 0;
 
-    }  .footer-title {
+    }.footer-title {
         color: white;
         font-size: 36px;
         line-height: 44px;
         font-weight: 700;
         width: 35%;
 
-    }   .footer-logo {
+    }.footer-logo {
         display: none
        
-    }   .footer-logo__tablet{
+    }.footer-logo__tablet{
         background-image: url(/assets//Logo/Logo-bandsite.svg);
         background-position: left;
         background-repeat: no-repeat;
         padding: 1rem;
         width: 13%;
+        background-size: 120px 20px;
         
-    }   .footer-info__websites{
+    }.footer-info__websites{
         display: flex;
-        padding-right: 5.5rem;
+        padding-right: 11.5rem;
         padding-top: 0rem;
         padding-bottom: 0rem;
 
-    }   .footer-info__instagram{
+    }.footer-info__instagram{
         background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
         background-repeat: no-repeat;
         padding-right: 1rem;
         width: 2rem;
         height: 2rem;
 
-    }  .footer-info__facebook{
+    }.footer-info__facebook{
         background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
         background-repeat: no-repeat;
         padding-right: 1rem;
         width: 2rem;
         height: 2rem;
 
-    }   .footer-info__twitter{
+    }.footer-info__twitter{
         background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
         background-repeat: no-repeat;
         width: 2rem;
         height: 2rem;
 
-    }   .footer-info__socials{
+    }.footer-info__socials{
         font-size: 14px;
         line-height: 20px;
         font-weight: 400;
         padding-top: 3rem;
-
-        
+        padding-left: 0;
+        padding-right: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     
-    }   .footer-list {
+    }.footer-list {
         list-style-type: none;
     
-    }   .footer-list__email {
+    }.footer-list__email {
         padding-top: 1rem;
         padding-bottom: 1.5rem;
 
-    }   .footer-list__name2 {
+    }.footer-list__name2 {
         padding-bottom: 1rem;
 
-    }   .copyright {
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
+    }.copyright {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
         width: 100%;
     }
-}   
+}  
+
 
 
 
@@ -446,16 +477,262 @@ html, body {
 
 
 /* Desktop */
-@media screen and (min-width: 1279px) {
-    .gallery {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-content: space-evenly;
-      background-color: pink;
-    }
-}
+@media screen and (min-width: 1280px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        /* padding-right: 1rem;
+        padding-left: 1rem; */
 
+    }.nav {
+        background-color: #323232;
+        text-align: center;
+        padding: 2.25rem;
+
+    }.nav-logo {
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-color: #323232;
+        background-position: left;
+        position: absolute;
+        z-index: 1;
+        width: 33%;
+        display: none;
+
+    }.nav-bar {
+        list-style-type: none;
+        justify-content: center;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 120px 20px;
+       
+    }.nav-bar__link{
+        margin-right: 5rem;
+    
+    }.nav-bar__links {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+      
+     /* Hero-Section */
+    }.hero {
+        opacity: 50%;
+        padding-bottom: 3rem;
+        margin: auto 0;
+
+    }.hero-title__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: relative;
+        
+    }.hero-title {
+        z-index: 2;
+        padding-left: 1rem;
+        color: #FFFFFF;
+        font-size: 60px;
+        line-height: 68px;
+        font-weight: 700;
+        position: absolute;
+
+     /* About-Section */
+    }.about {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+       
+    
+    }.about-img {
+      
+        padding-left: 6rem;
+        padding-right: 6rem;
+     
+
+    }.about-title {
+        margin: 0;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    
+    }.about-quote{
+        padding-right: 6rem;
+        padding-left: 6rem;
+        
+    }.about-quote__quote{
+        width: 75%;
+
+    }.about-quote__quote, .about-quote__author {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+
+    }.about-quote__the-bees{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: demi 600;
+        padding-bottom: 1rem;
+
+    }.about-quote__author{
+        font-size: 14px;
+        line-height: 44px;
+        font-weight: 400;
+        padding-bottom: 2.25rem;
+
+    }.about-text{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        width: 70%;
+        
+    }.about-text1{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        width: 70%;
+       
+    }.about-band__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+
+    }.tablet-about__text{
+        display: flex;
+        width: 100%;
+        padding-right: 2.5rem;
+
+    }.tablet-about__text1{
+        display: flex;
+        width: 100%;
+        padding-left: 2.5rem;
+        
+    }.tablet-about {
+        display: flex;
+        height: 20rem;
+
+        /* Photos-Section */
+    }.photos-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 20rem);
+        grid-gap: 50px 50px;
+
+    }.photos {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color:   #fafafa;
+      
+    }.photos-title {
+        padding-bottom: 2.5rem;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    
+    }.photos-imgs {
+        padding-bottom: 2.5rem;
+    
+    }.photos-imgs__ {
+        width: 100%;
+        height: auto
+    
+        /* Footer-Section */
+    }.footer {
+        background-color: #323232;
+        color: white;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        padding-top: 3rem;
+    
+    }.footer-info {
+        color: white;   
+        display: flex;
+        align-items:flex-end;
+        padding: 0;
+
+    }.footer-title {
+        color: white;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        width: 15%;
+
+    }.footer-logo {
+        display: none
+       
+    }.footer-logo__tablet{
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        padding-left: 80rem;
+        width: 13%;
+        background-size: 120px 20px;
+        
+    }.footer-info__websites{
+        display: flex;
+        padding-right: 11.5rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+
+    }.footer-info__instagram{
+        background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+    }.footer-info__facebook{
+        background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+    }.footer-info__twitter{
+        background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+
+    }.footer-info__socials{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        padding-top: 3rem;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    
+    }.footer-list {
+        list-style-type: none;
+        width: 15%;
+    
+    }.footer-list__email {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+
+    }.footer-list__name2 {
+        padding-bottom: 1rem;
+
+    }.copyright {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+        width: 100%;
+    }.footer-logo__mobile {
+        padding: 0;
+        width: 100%;
+    }
+}  
 
 
 
