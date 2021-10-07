@@ -35,16 +35,16 @@ html, body {
             margin: 1.25vw 0;
             background-color: lightpink;
           }
-    }
-}
-
-@include tablet {
-    .gallery {
-      &__item {
-        width: 30%;
-        margin: 1.25vw 0;
-        background-color: red;
-      }
+        @include tablet {
+            .gallery {
+              &__item {
+                width: 30%;
+                margin: 1.25vw 0;
+                background-color: red;
+              }
+            }
+        }
+        
     }
 }
 

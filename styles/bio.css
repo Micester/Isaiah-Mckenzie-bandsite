@@ -12,7 +12,7 @@ html, body {
 }
 
 /* mobile */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px)  {
     html, body {
         margin: 0;
         padding: 0;
@@ -25,172 +25,174 @@ html, body {
       background-color: #323232;
       padding-bottom: 1.5;
       text-align: center;
+
     }
-}   .nav-logo {
-    background-image: url(/assets//Logo/Logo-bandsite.svg);
-    background-color: #323232;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 1.5rem;
-    max-height: 1.25rem;
-    height: 7.5rem;
-
-  
-}   .nav-bar {
-    list-style-type: none;
-    justify-content: space-around;
+    .nav-logo {
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-color: #323232;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1.5rem;
+        max-height: 1.25rem;
+        height: 7.5rem;
     
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-}   .nav-bar__links {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-
-
-    /* Hero-Section */
-}  .hero {
-    opacity: 50%;
-    margin-top: -1.4rem;
-    padding-bottom: 1.5rem;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-
-}  .hero-title__img{
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}  .hero-title {
-    z-index: 2;
-    padding-left: 1rem;
-    transform: translateY(7.5rem);
-    color: #FFFFFF;
-
-    /* About-Section */
-}   .about {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-
-}  .about-img {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+      
+    }   .nav-bar {
+        list-style-type: none;
+        justify-content: space-around;
+        
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     
-}  .about-title {
-    margin: 0;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-
-}   .about-quote__quote, .about-quote__author {
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 700;
-}   .about-quote__the-bees{
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: demi 600;
-    padding-bottom: 1rem;
-}   .about-quote__author{
-    padding-bottom: 1rem;
-}   .about-text{
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400
-}  .about-band__img{
-    width: 100%;
-    height: auto;
-    z-index: 1;
-
-
-    /* Photos-Section */
-}   .photos {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1.5rem;
-    background-color:   #fafafa;
-  
-
-}   .photos-title {
-    padding-bottom: 1rem;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-
-}   .photos-imgs {
-    padding-bottom: 1rem;
-
-}   .photos-imgs__ {
-    width: 100%;
-    height: auto;
-
-    /* Footer-Section */
-}   .footer {
-    background-color: #323232;
-}   .footer-info {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1.5rem;
-    color: white;   
-}  .footer-title {
-    color: white;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-}   .footer-logo {
-    background-image: url(/assets//Logo/Logo-bandsite.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    padding: 1rem;
-   
-}   .footer-info__websites{
-    display: flex;
-    padding-right: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}   .footer-info__instagram{
-    background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
-    background-repeat: no-repeat;
-    padding-right: 1rem;
-    width: 2rem;
-    height: 2rem;
-}  .footer-info__facebook{
-    background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
-    background-repeat: no-repeat;
-    padding-right: 1rem;
-    width: 2rem;
-    height: 2rem;
-}   .footer-info__twitter{
-    background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
-    background-repeat: no-repeat;
-    width: 2rem;
-    height: 2rem;
-}   .footer-info__socials{
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-}   .footer-list {
-    list-style-type: none;
-}   .footer-list__email {
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
-}   .footer-list__name2 {
-    padding-bottom: 1rem;
-}   .footer-logo {
-    padding-top: 1.5rem;
-    padding-bottom: 1r  em;
-    height: 1.5rem;
-}   .copyright {
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-}
+    }   .nav-bar__links {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    
+    
+        /* Hero-Section */
+    }  .hero {
+        opacity: 50%;
+        margin-top: -1.4rem;
+        padding-bottom: 1.5rem;
+        font-size: 24px;
+        line-height: 22px;
+        font-weight: 600;
+    
+    }  .hero-title__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }  .hero-title {
+        z-index: 2;
+        padding-left: 1rem;
+        transform: translateY(7.5rem);
+        color: #FFFFFF;
+    
+        /* About-Section */
+    }   .about {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    
+    }  .about-img {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    }  .about-title {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    
+    }   .about-quote__quote, .about-quote__author {
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 700;
+    }   .about-quote__the-bees{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: demi 600;
+        padding-bottom: 1rem;
+    }   .about-quote__author{
+        padding-bottom: 1rem;
+    }   .about-text{
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400
+    }  .about-band__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    
+    
+        /* Photos-Section */
+    }   .photos {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        background-color:   #fafafa;
+      
+    
+    }   .photos-title {
+        padding-bottom: 1rem;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    
+    }   .photos-imgs {
+        padding-bottom: 1rem;
+    
+    }   .photos-imgs__ {
+        width: 100%;
+        height: auto;
+    
+        /* Footer-Section */
+    }   .footer {
+        background-color: #323232;
+    }   .footer-info {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        color: white;   
+    }  .footer-title {
+        color: white;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+    }   .footer-logo {
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 1rem;
+       
+    }   .footer-info__websites{
+        display: flex;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }   .footer-info__instagram{
+        background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }  .footer-info__facebook{
+        background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }   .footer-info__twitter{
+        background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+    }   .footer-info__socials{
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+    }   .footer-list {
+        list-style-type: none;
+    }   .footer-list__email {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }   .footer-list__name2 {
+        padding-bottom: 1rem;
+    }   .footer-logo {
+        padding-top: 1.5rem;
+        padding-bottom: 1r  em;
+        height: 1.5rem;
+    }   .copyright {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+}   
 
 
 
@@ -202,18 +204,241 @@ html, body {
 
 
 /* Tablet */
-@media screen and (min-width: 768px) {
-    .gallery {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-content: space-evenly;
-      background-color:blue ;
+@media screen and (min-width: 767px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        /* padding-right: 1rem;
+        padding-left: 1rem; */
+      } .nav {
+        background-color: #323232;
+        padding-bottom: 1.5;
+        text-align: center;
+        margin: -4rem;
+
+      }   .nav-logo {
+          background-image: url(/assets//Logo/Logo-bandsite.svg);
+          background-color: #323232;
+          background-position: left;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+
+      }   .nav-bar {
+          list-style-type: none;
+          justify-content: space-around;
+          
+          display: flex;
+          overflow: hidden;
+          width: 100%;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+    
+      }   .nav-bar__links {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+      
+    
+       /* Hero-Section */
+    }  .hero {
+        opacity: 50%;
+        padding-top: 2.8rem;
+        padding-bottom: 3rem;
+       
+    }  .hero-title__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+
+    }  .hero-title {
+        z-index: 2;
+        padding-left: 1rem;
+        transform: translateY(16.5rem);
+        position: absolute;
+        color: #FFFFFF;
+    
+        /* About-Section */
+    }   .about {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        padding-bottom: 2.25rem;
+    
+    }  .about-img {
+        padding-bottom: 2.25rem;
+        padding-top: 2.25rem;
+        
+    }  .about-title {
+        margin: 0;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    
+    }   .about-quote__quote, .about-quote__author {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }   .about-quote__the-bees{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: demi 600;
+        padding-bottom: 2.25rem;
+    }   .about-quote__author{
+        font-size: 14px;
+        line-height: 44px;
+        font-weight: 400;
+        padding-bottom: 2.25rem;
+    }   .about-text{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+       
+    
+        
+    }   .about-text1{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+       
+       
+    
+        
+    } .about-band__img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }  .tablet-about__text{
+        display: flex;
+        width: 80%;
+        padding-right: 2.5rem;
+    }  .tablet-about__text1{
+        display: flex;
+        width: 80%;
+        padding-left: 2.5rem;
+        
+    }   .tablet-about {
+        display: flex;
+
+
+        /* Photos-Section */
+    }   .photos-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+        grid-gap: 0px 20px;
+
+    }   .photos {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        padding-top: 3rem;
+        background-color:   #fafafa;
+      
+    
+    }   .photos-title {
+        padding-bottom: 2.5rem;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    
+    }   .photos-imgs {
+        padding-bottom: 2.5rem;
+    
+    }   .photos-imgs__ {
+        width: 100%;
+        height: auto;
+
+    
+        /* Footer-Section */
+    }   .footer {
+        background-color: #323232;
+    }   .footer-info {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        padding-top: 1.5rem;
+        color: white;   
+
+    }  .footer-title {
+        color: white;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+
+    }   .footer-logo {
+        background-image: url(/assets//Logo/Logo-bandsite.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 1rem;
+       
+    }   .footer-info__websites{
+        display: flex;
+        padding-right: 2.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+    }   .footer-info__instagram{
+        background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+    }  .footer-info__facebook{
+        background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
+        background-repeat: no-repeat;
+        padding-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+    }   .footer-info__twitter{
+        background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+
+    }   .footer-info__socials{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+
+    }   .footer-list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (3, 5rem);
+        grid-gap: 5px 20px;
+        
+
+    
+    }   .footer-list__email {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+
+    }   .footer-list__name2 {
+        padding-bottom: 1rem;
+
+    }   .footer-logo {
+        padding-top: 1.5rem;
+        padding-bottom: 1r  em;
+        height: 1.5rem;
+
+    }   .copyright {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
     }
-}
+}   
+
+
+
+
+
+
+
+
 
 /* Desktop */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1279px) {
     .gallery {
       flex-direction: row;
       flex-wrap: wrap;
