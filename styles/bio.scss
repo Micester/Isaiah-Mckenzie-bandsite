@@ -1,50 +1,83 @@
 @use 'partials/partials' as *;
 @use 'partials/mixins' as *;
 
+
+// Variables
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+
+// Main colors
+$bandsite-Black: #323232;
+$silver: #AFAFAF;
+$white: #FFFFFF;
+
+//Secondary colors
+$bandsite-DarkBlack: #000000;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-width){
+        @content;
+    }
+
+}@mixin desktop {
+    @media screen and (min-width: $desktop-width){
+        @content;
+    }
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
-.gallery {
-    @include flexed(column);
-    margin: 0 20px;
 
-    @include mobile {
-        //TODO add Nav, HERO, ABOUT, PHOTO_GALLERY, FOOTER
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-    }
+.header {
+    background: $bandsite-Black;
+    padding-right: 1rem;
+    padding-left: 1rem;
 
-    &__item {
-        text-align: center;
-        background-color: lightblue;
-        margin: 20px 0;
-        padding: 20px 0;
-        font-size: 5rem;
-        border-radius: 5px;
-        @include mobile {
-            width: 40%;
-            margin: 3vw 0;
-            background-color: lightgreen;
-        }
-        @include desktop {
-            width: 30%;
-            margin: 1.25vw 0;
-            background-color: lightpink;
-          }
-        @include tablet {
-            .gallery {
-              &__item {
-                width: 30%;
-                margin: 1.25vw 0;
-                background-color: red;
-              }
-            }
-        }
+    &__logo {
+        background-image: url('../assets/Logo/Logo-bandsite.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1.25rem;
         
     }
 }
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+   
+    @include tablet {
+        justify-content: flex-end;
+    }
+
+    &__link {
+        padding: 0.625rem;
+        text-decoration: none;
+        color: $white;
+        transition: background-color 0.25s;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+    
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background-color: darken($bandsite-DarkBlack, 5%);
+        }
+    }
+
+}   
+   
+
+
 
