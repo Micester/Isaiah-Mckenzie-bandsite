@@ -108,9 +108,16 @@ html, body {
     padding-bottom: 1rem;
     padding-top: 1.5rem;
   }
-  .about-quote__description {
+  .about-quote__container {
     display: flex;
     flex-direction: column;
+  }
+  .about-quote__text {
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .about-quote__container__text {
+    padding-bottom: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -139,7 +146,7 @@ html, body {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .about-quote__description {
+  .about-quote__container {
     display: flex;
     font-size: 0.875rem;
     line-height: 1.375rem;
@@ -156,14 +163,22 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 2.25rem;
+  }
+  .about-quote__text {
+    margin: 0;
+    padding-top: 2.25rem;
+  }
+  .about-quote__container__text {
+    padding: 0;
+    padding-right: 2.25rem;
+  }
+  .about-quote__container__text1 {
+    padding: 0;
   }
 }
 .about__header {
   margin: 0;
-}
-.about-quote__text {
-  margin: 0;
-  padding-top: 2.25rem;
 }
 .about-quote__author {
   margin: 0;
@@ -184,10 +199,42 @@ html, body {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.photo-title {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  margin: 0;
+@media screen and (min-width: 320px) {
+  .photo {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .photo-title {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo {
+    background: #FAFAFA;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .photo-title {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+  }
+  .photo-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo-imgs__column {
+    flex: 25%;
+    max-width: 100%;
+  }
+  .photo-imgs__column__img {
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 
 .photo-img__img {

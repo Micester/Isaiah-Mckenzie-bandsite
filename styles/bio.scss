@@ -158,9 +158,16 @@ html, body {
             padding-bottom: 1rem;
             padding-top: 1.5rem;
         }
-        &-quote__description{
+        &-quote__container{
             display: flex;
             flex-direction: column;
+        }
+        &-quote__text{
+            margin: 0;
+            padding-top: 1rem;
+        }
+        &-quote__container__text{
+            padding-bottom: 1rem;
         }
     }
 
@@ -193,7 +200,7 @@ html, body {
             flex-wrap: wrap;
 
         }
-        &-quote__description{
+        &-quote__container{
             display: flex;
             font-size: 0.875rem;
             line-height: 1.375rem;
@@ -212,20 +219,30 @@ html, body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-right: 2.25rem
+            
 
         }
+        &-quote__text{
+            margin: 0;
+            padding-top: 2.25rem;
+        }
+        &-quote__container__text{
+            padding: 0;
+            padding-right: 2.25rem;
+        }
+        &-quote__container__text1{
+            padding: 0;
+        }
+       
     }
     &__header{
     margin: 0;
     }
-    &-quote__text{
-        margin: 0;
-        padding-top: 2.25rem;
-    }
     &-quote__author{
         margin: 0;
         padding-top: 1rem;
-    }
+    } 
    
 }
 
@@ -242,17 +259,52 @@ html, body {
 }
 
 
-
 .photo {
     background: $Alabaster;
     padding-right: 1rem;
     padding-left: 1rem;
 
-    &-title {
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-        margin: 0;
+    @include mobile{
+    padding-right: 1rem;
+    padding-left: 1rem;
+        &-title {
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            margin: 0;
+        }
     }
+
+    @include tablet{ 
+    background: $Alabaster;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+
+        &-title {
+            padding-top: 3rem;
+            padding-bottom: 2.25rem;
+            margin: 0;
+        }
+        &-imgs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        &-imgs__column{
+            flex: 25%;
+            max-width: 100%;
+           
+           
+        }
+        &-imgs__column__img{
+            vertical-align: middle;
+            width: 100%;
+            
+        }
+
+    }
+
 }
 
 .photo-img__img {
