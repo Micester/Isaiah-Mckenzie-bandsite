@@ -48,11 +48,19 @@ html, body {
     background: $bandsite-Black;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
    
-
     @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+
+        &__logo{
+            width: 20%;
+        }
+    }
+
+    @include desktop() {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -82,14 +90,11 @@ html, body {
     @include tablet {
         justify-content: flex-end;
 
-        
         &:hover{
             // background-color: darken($bandsite-DarkBlack, 5%);
             border-bottom: -1.1875rem solid ($white);
             color: $white;
-           
         }
-
     }
     &__link {
         padding: 0.625rem;
@@ -101,10 +106,8 @@ html, body {
         justify-content: space-evenly;
         transition: all 0.5s;
   
-    
         @include tablet {
             font-size: 1.5rem;
-    
         }
         &:hover{
             // background-color: darken($bandsite-DarkBlack, 5%);
@@ -119,7 +122,6 @@ html, body {
     align-items: center;
 
     @include mobile {
-
         &__title {
             color: $white;
             position: absolute;
@@ -128,10 +130,20 @@ html, body {
     }
     
     @include tablet {
-        font-size: 2.25rem;
+        font-size: 3.75rem;
+        line-height: 4.25rem;
 
         &__title{
         padding-left: 2.25rem;
+        margin: 0;
+        }
+    }
+
+    @include desktop {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+
+        &__title{
         margin: 0;
         }
     }
@@ -175,8 +187,6 @@ html, body {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
         padding-bottom: 2.25rem;
-        // display: flex;
-        // flex-direction: column;
 
         &__header{
             padding-top: 3rem;
@@ -184,21 +194,74 @@ html, body {
             font-size: 2.25rem;
             justify-content: flex-start;
             padding-right: 2.25rem;
-            padding-left: 2.25rem;
         }
         &-band{
             max-width: 75%;
             height: auto;
             justify-content: center;
             flex-wrap: wrap;
-    
         }
         &-quote{
             max-width: 75%;
             height: auto;
             justify-content: center;
             flex-wrap: wrap;
+        }
+        &-quote__container{
+            display: flex;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            flex-direction: row;    
+        }
+        &-quote__the-bees{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem;
+            margin: 0;       
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 2.25rem
+        }
+        &-quote__text{
+            margin: 0;
+            padding-top: 2.25rem;
+        }
+        &-quote__container__text{
+            padding: 0;
+            padding-right: 2.25rem;
+        }
+        &-quote__container__text1{
+            padding: 0;
+        }
+    }
 
+    @include desktop {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        padding-bottom: 2.25rem;
+
+        &__header{
+            padding-top: 3rem;
+            padding-bottom: 2.25rem;
+            font-size: 2.25rem;
+            justify-content: flex-start;
+            padding-right: 2.25rem;
+        }
+        &-band{
+            max-width: 75%;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &-quote{
+            max-width: 75%;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         &-quote__container{
             display: flex;
@@ -238,11 +301,9 @@ html, body {
         margin: 0;
         padding-top: 1rem;
     } 
-   
 }
 
 .about-band {
-
     &__img {
     width: 100%;
     height: auto;
@@ -261,10 +322,12 @@ html, body {
     @include mobile{
     padding-right: 1rem;
     padding-left: 1rem;
+
         &-title {
             padding-top: 1.5rem;
             padding-bottom: 1rem;
             margin: 0;
+            font-size: 2.25rem;
         }
     }
 
@@ -278,26 +341,69 @@ html, body {
             padding-top: 3rem;
             padding-bottom: 2.25rem;
             margin: 0;
+            font-size: 2.25rem;
         }
         &-imgs {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;     
+            justify-content: space-between; 
         }
         &-imgs__column{
-            flex: 25%;
-            max-width: 100%; 
+            flex: 33%;
+            // max-width: 100%;
+            width: 33%;  
         }
         &-imgs__column__img{
             vertical-align: middle;
-            width: 100%; 
+            display: inline-block;
+            width: 90%;  
         }
     }
+
+    @include desktop { 
+        background: $Alabaster;
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        padding-bottom: 2.25rem;
+
+            &-title {
+                padding-top: 3rem;
+                padding-bottom: 2.25rem;
+                margin: 0;
+            }
+            &-imgs {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between; 
+            }
+            &-imgs__column{
+                flex: 33%;
+                // max-width: 100%;
+                width: 33%;  
+            }
+            &-imgs__column__img{
+                vertical-align: middle;
+                display: inline-block;
+                width: 90%;  
+            }
+        }
 }
 
 .photo-img__img {
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 2.25rem;
+
+    @include tablet {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    @include desktop {
+        width: 100%;
+        padding-bottom: 2.25rem;
+    }
 }
 
 .footer {
@@ -372,12 +478,14 @@ html, body {
     padding-left: 2.25rem;
     background: $bandsite-Black;
     color: $white;
+
         &-info {
             display: flex;
             align-items: flex-end;
             background-image: url('../assets/Logo/Logo-bandsite.svg');
             background-repeat: no-repeat;
             background-position: right;
+            background-position-x: 34rem;
         }
         &-title{
             padding-top: 3rem;
@@ -423,6 +531,69 @@ html, body {
             padding-bottom: 2.25rem;
         }
     }
+
+    @include desktop {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        background: $bandsite-Black;
+        color: $white;
+
+            &-info {
+                display: flex;
+                align-items: flex-end;
+                background-image: url('../assets/Logo/Logo-bandsite.svg');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-position-x: 65rem;
+            }
+            &-title{
+                padding-top: 3rem;
+                padding-bottom: 2.25rem;
+                margin: 0;
+                width: 20%;
+                align-items: flex-end;
+                font-size: 2.25rem;
+            }
+            &--info__socials{
+                list-style-type: none;  
+            }
+            &-info__socials__container{
+                flex: 25%;
+                max-width: 100%;
+                padding-right: 1rem;
+            }
+            &-list{
+                list-style-type: none;
+                margin: 0;
+                padding: 0; 
+            }
+            &-info__socails__tablet{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.875rem;
+                line-height: 1.25rem;  
+            }
+            &-logo{
+                display: none;
+            }
+            &-list__name2 {
+                padding-bottom: 2.25rem;
+            }
+            &-list__general2{
+                padding-bottom: 2.25rem;
+            }
+            &-list__email{
+                padding-bottom: 2.25rem;
+            }
+            &-logo__mobile{
+                padding-top: 2.25rem;
+                padding-bottom: 2.25rem;
+            }
+            &-info__websites{
+                display: flex;
+                height: 4rem;
+            }
+        }
 }
 
 .copyright {

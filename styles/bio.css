@@ -17,6 +17,17 @@ html, body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
+  }
+  .header__logo {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     padding: 2.25rem;
   }
   .header__logo {
@@ -80,10 +91,20 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    font-size: 2.25rem;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
   }
   .hero__title {
     padding-left: 2.25rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero__title {
     margin: 0;
   }
 }
@@ -132,7 +153,62 @@ html, body {
     font-size: 2.25rem;
     justify-content: flex-start;
     padding-right: 2.25rem;
+  }
+  .about-band {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-quote {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-quote__container {
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    flex-direction: row;
+  }
+  .about-quote__the-bees {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2.25rem;
+  }
+  .about-quote__text {
+    margin: 0;
+    padding-top: 2.25rem;
+  }
+  .about-quote__container__text {
+    padding: 0;
+    padding-right: 2.25rem;
+  }
+  .about-quote__container__text1 {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    padding-right: 2.25rem;
     padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .about__header {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    font-size: 2.25rem;
+    justify-content: flex-start;
+    padding-right: 2.25rem;
   }
   .about-band {
     max-width: 75%;
@@ -208,6 +284,7 @@ html, body {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     margin: 0;
+    font-size: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -221,25 +298,68 @@ html, body {
     padding-top: 3rem;
     padding-bottom: 2.25rem;
     margin: 0;
+    font-size: 2.25rem;
   }
   .photo-imgs {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
   .photo-imgs__column {
-    flex: 25%;
-    max-width: 100%;
+    flex: 33%;
+    width: 33%;
   }
   .photo-imgs__column__img {
     vertical-align: middle;
-    width: 100%;
+    display: inline-block;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photo {
+    background: #FAFAFA;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .photo-title {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+  }
+  .photo-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo-imgs__column {
+    flex: 33%;
+    width: 33%;
+  }
+  .photo-imgs__column__img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 90%;
   }
 }
 
 .photo-img__img {
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .photo-img__img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photo-img__img {
+    width: 100%;
+    padding-bottom: 2.25rem;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -321,6 +441,7 @@ html, body {
     background-image: url("../assets/Logo/Logo-bandsite.svg");
     background-repeat: no-repeat;
     background-position: right;
+    background-position-x: 34rem;
   }
   .footer-title {
     padding-top: 3rem;
@@ -364,6 +485,69 @@ html, body {
   .footer-logo__mobile {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    background: #323232;
+    color: #FFFFFF;
+  }
+  .footer-info {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../assets/Logo/Logo-bandsite.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 65rem;
+  }
+  .footer-title {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+    width: 20%;
+    align-items: flex-end;
+    font-size: 2.25rem;
+  }
+  .footer--info__socials {
+    list-style-type: none;
+  }
+  .footer-info__socials__container {
+    flex: 25%;
+    max-width: 100%;
+    padding-right: 1rem;
+  }
+  .footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-info__socails__tablet {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-list__name2 {
+    padding-bottom: 2.25rem;
+  }
+  .footer-list__general2 {
+    padding-bottom: 2.25rem;
+  }
+  .footer-list__email {
+    padding-bottom: 2.25rem;
+  }
+  .footer-logo__mobile {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .footer-info__websites {
+    display: flex;
+    height: 4rem;
   }
 }
 
