@@ -1,3 +1,7 @@
+* {
+  border: 1px dotted black;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -41,4 +45,54 @@ html, body {
 }
 .nav__link:hover {
   background-color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+.hero__title {
+  color: #FFFFFF;
+  position: absolute;
+}
+.hero__img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.about__header {
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.about-band__img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  margin: 0;
+}
+
+.photo {
+  background: #FAFAFA;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.photo-title {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.photo-img__img {
+  width: 100%;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=bio.css.map */

@@ -29,6 +29,10 @@ $Alabaster: #FAFAFA;
     }
 }
 
+* {
+    border: 1px dotted black;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -54,11 +58,9 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
  
-   
     @include tablet {
         justify-content: flex-end;
     }
-
     &__link {
         padding: 0.625rem;
         text-decoration: none;
@@ -75,9 +77,65 @@ html, body {
             background-color: darken($bandsite-DarkBlack, 5%);
         }
     }
+} 
 
-}   
-   
+.hero {
+    display: flex;
+    align-items: center;
+    // justify-content: center left;
+    // margin: auto;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    
+    &__title {
+    color: $white;
+    position: absolute;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+} 
 
+.about {
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 
+    &__header{
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    }
+}
 
+.about-band {
+
+    &__img {
+    width: 100%;
+    height: auto;
+    }
+}
+
+.about-text {
+    margin: 0;
+}
+
+.photo {
+    background: $Alabaster;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &-title {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+}
+
+.photo-img__img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
