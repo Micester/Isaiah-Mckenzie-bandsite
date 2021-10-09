@@ -242,69 +242,129 @@ html, body {
   padding-bottom: 1rem;
 }
 
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  background: #323232;
-  color: #FFFFFF;
+@media screen and (min-width: 320px) {
+  .footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background: #323232;
+    color: #FFFFFF;
+  }
+  .footer-title {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .footer--info__socials {
+    list-style-type: none;
+  }
+  .footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-list__name2 {
+    padding-bottom: 1rem;
+  }
+  .footer-list__general2 {
+    padding-bottom: 1rem;
+  }
+  .footer-list__email {
+    padding-bottom: 1rem;
+  }
+  .footer-logo__mobile {
+    padding-top: 1.5rem;
+  }
+  .footer-logo {
+    background-image: url("../assets/Logo/Logo-bandsite.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 1.25rem;
+  }
+  .footer-info__instagram {
+    background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-info__facebook {
+    background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-info__twitter {
+    background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-info__websites {
+    display: flex;
+  }
+  .footer-list {
+    padding-bottom: 1.5rem;
+  }
 }
-.footer-title {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-.footer--info__socials {
-  list-style-type: none;
-}
-.footer-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-list__name2 {
-  padding-bottom: 1rem;
-}
-.footer-list__general2 {
-  padding-bottom: 1rem;
-}
-.footer-list__email {
-  padding-bottom: 1rem;
-}
-.footer-logo__mobile {
-  padding-top: 1.5rem;
-}
-.footer-logo {
-  background-image: url("../assets/Logo/Logo-bandsite.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-  height: 1.25rem;
-}
-.footer-info__instagram {
-  background-image: url(/assets/Icons/SVG/Icon-instagram.svg);
-  justify-content: center;
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
-}
-.footer-info__facebook {
-  background-image: url(/assets/Icons/SVG/Icon-facebook.svg);
-  justify-content: center;
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
-}
-.footer-info__twitter {
-  background-image: url(/assets/Icons/SVG/Icon-twitter.svg);
-  justify-content: center;
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
-}
-.footer-info__websites {
-  display: flex;
-}
-.footer-list {
-  padding-bottom: 1.5rem;
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    background: #323232;
+    color: #FFFFFF;
+  }
+  .footer-info {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../assets/Logo/Logo-bandsite.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .footer-title {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+    width: 30%;
+    align-items: flex-end;
+    font-size: 2.25rem;
+  }
+  .footer--info__socials {
+    list-style-type: none;
+  }
+  .footer-info__socials__container {
+    flex: 25%;
+    max-width: 100%;
+    padding-right: 1rem;
+  }
+  .footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-info__socails__tablet {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-list__name2 {
+    padding-bottom: 2.25rem;
+  }
+  .footer-list__general2 {
+    padding-bottom: 2.25rem;
+  }
+  .footer-list__email {
+    padding-bottom: 2.25rem;
+  }
+  .footer-logo__mobile {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
 }
 
 .copyright {
