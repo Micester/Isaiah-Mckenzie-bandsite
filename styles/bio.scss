@@ -18,6 +18,12 @@ $bandsite-DarkBlack: #000000;
 $Mercury: #E1E1E1;
 $Alabaster: #FAFAFA;
 
+@mixin mobile {
+    @media screen and (min-width: $mobile-width){
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (min-width: $tablet-width){
         @content;
@@ -40,8 +46,22 @@ html, body {
 
 .header {
     background: $bandsite-Black;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+   
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2.25rem;
+
+        &__logo{
+            width: 20%;
+        }
+    }
 
     &__logo {
         background-image: url('../assets/Logo/Logo-bandsite.svg');
@@ -49,6 +69,8 @@ html, body {
         background-position: center;
         height: 1.25rem;
         padding-top: 1.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
@@ -59,6 +81,15 @@ html, body {
  
     @include tablet {
         justify-content: flex-end;
+
+        
+        &:hover{
+            // background-color: darken($bandsite-DarkBlack, 5%);
+            border-bottom: -1.1875rem solid ($white);
+            color: $white;
+           
+        }
+
     }
     &__link {
         padding: 0.625rem;
@@ -69,14 +100,15 @@ html, body {
         width: 50%;
         justify-content: space-evenly;
         transition: all 0.5s;
+  
     
         @include tablet {
             font-size: 1.5rem;
+    
         }
         &:hover{
             // background-color: darken($bandsite-DarkBlack, 5%);
             border-bottom: 0.1875rem solid ($white);
-            transform: sca(1.5);
             color: $white;
         }
     }
@@ -85,10 +117,28 @@ html, body {
 .hero {
     display: flex;
     align-items: center;
+
+    @include mobile {
+
+        &__title {
+            color: $white;
+            position: absolute;
+            padding-left: 1rem;
+        }
+    }
     
+    @include tablet {
+        font-size: 2.25rem;
+
+        &__title{
+        padding-left: 2.25rem;
+        margin: 0;
+        }
+    }
     &__title {
     color: $white;
     position: absolute;
+    
     }
     &__img {
         width: 100%;
@@ -102,19 +152,81 @@ html, body {
     padding-left: 1rem;
     padding-bottom: 1rem;
 
+    @include mobile {
+        &__header{
+            align-items: center;
+            padding-bottom: 1rem;
+            padding-top: 1.5rem;
+        }
+        &-quote__description{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include tablet {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        padding-bottom: 2.25rem;
+        // display: flex;
+        // flex-direction: column;
+
+        &__header{
+            padding-top: 3rem;
+            padding-bottom: 2.25rem;
+            font-size: 2.25rem;
+            justify-content: flex-start;
+            padding-right: 2.25rem;
+            padding-left: 2.25rem;
+        }
+        &-band{
+            max-width: 75%;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+        }
+        &-quote{
+            max-width: 75%;
+            height: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        &-quote__description{
+            display: flex;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            flex-direction: row;
+            
+        }
+        &-quote__the-bees{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem;
+            margin: 0;
+            
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
     &__header{
     margin: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
     }
     &-quote__text{
         margin: 0;
-        padding-top: 1rem;
+        padding-top: 2.25rem;
     }
     &-quote__author{
         margin: 0;
         padding-top: 1rem;
     }
+   
 }
 
 .about-band {
@@ -129,9 +241,7 @@ html, body {
     margin: 0;
 }
 
-.tablet-about__text{
-    padding-bottom: 1rem;
-}
+
 
 .photo {
     background: $Alabaster;
@@ -215,7 +325,6 @@ html, body {
     &-info__websites{
         display: flex;
         
-    
     }
     &-list{
         padding-bottom: 1.5rem;

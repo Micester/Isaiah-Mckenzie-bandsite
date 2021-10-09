@@ -9,8 +9,19 @@ html, body {
 
 .header {
   background: #323232;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2.25rem;
+  }
+  .header__logo {
+    width: 20%;
+  }
 }
 .header__logo {
   background-image: url("../assets/Logo/Logo-bandsite.svg");
@@ -18,6 +29,8 @@ html, body {
   background-position: center;
   height: 1.25rem;
   padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .nav {
@@ -28,6 +41,10 @@ html, body {
 @media screen and (min-width: 768px) {
   .nav {
     justify-content: flex-end;
+  }
+  .nav:hover {
+    border-bottom: -1.1875rem solid #FFFFFF;
+    color: #FFFFFF;
   }
 }
 .nav__link {
@@ -47,13 +64,28 @@ html, body {
 }
 .nav__link:hover {
   border-bottom: 0.1875rem solid #FFFFFF;
-  transform: sca(1.5);
   color: #FFFFFF;
 }
 
 .hero {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 320px) {
+  .hero__title {
+    color: #FFFFFF;
+    position: absolute;
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    font-size: 2.25rem;
+  }
+  .hero__title {
+    padding-left: 2.25rem;
+    margin: 0;
+  }
 }
 .hero__title {
   color: #FFFFFF;
@@ -70,14 +102,68 @@ html, body {
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 320px) {
+  .about__header {
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+  .about-quote__description {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .about__header {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    font-size: 2.25rem;
+    justify-content: flex-start;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+  }
+  .about-band {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-quote {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-quote__description {
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    flex-direction: row;
+  }
+  .about-quote__the-bees {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    margin: 0;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .about__header {
   margin: 0;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
 }
 .about-quote__text {
   margin: 0;
-  padding-top: 1rem;
+  padding-top: 2.25rem;
 }
 .about-quote__author {
   margin: 0;
@@ -91,10 +177,6 @@ html, body {
 
 .about-text {
   margin: 0;
-}
-
-.tablet-about__text {
-  padding-bottom: 1rem;
 }
 
 .photo {
