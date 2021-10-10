@@ -2,3 +2,21 @@ $mobile-breakpoint: 320px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
 
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('/assets/Font/fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: 400;
+   
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('/assets/Font/fonts/AvenirNextLTPro-Demi.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('/assets/Font/fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: 700;
+}

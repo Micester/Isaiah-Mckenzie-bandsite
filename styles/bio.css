@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("/assets/Font/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("/assets/Font/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("/assets/Font/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: 700;
+}
 * {
   border: 1px dotted black;
 }
@@ -38,7 +53,8 @@ html, body {
   background-position: center;
   align-items: center;
   max-height: 20px;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .nav {
@@ -187,6 +203,7 @@ html, body {
 .hero__title {
   color: #FFFFFF;
   position: absolute;
+  font-weight: 400;
 }
 .hero__img {
   width: 100%;
