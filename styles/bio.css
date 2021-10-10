@@ -13,6 +13,7 @@
   src: url("/assets/Font/fonts/AvenirNextLTPro-Bold.woff") format("woff");
   font-weight: 700;
 }
+
 * {
   border: 1px dotted black;
 }
