@@ -13,11 +13,6 @@
   src: url("/assets/Font/fonts/AvenirNextLTPro-Bold.woff") format("woff");
   font-weight: 700;
 }
-
-* {
-  border: 1px dotted black;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -156,11 +151,11 @@ html, body {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .nav__button {
+  .nav {
     font-size: 1.5rem;
   }
 }
-.nav__button:hover {
+.nav:hover {
   background-color: black;
   border-bottom: 0.1875rem solid #FFFFFF;
   color: #FFFFFF;

@@ -1,13 +1,10 @@
 @use 'partials/partials' as *;
 @use 'partials/mixins' as *;
 
-
-
 // Variables
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1280px;
-
 
 // Main colors
 $bandsite-Black: #323232;
@@ -24,20 +21,15 @@ $Alabaster: #FAFAFA;
         @content;
     }
 }
-
 @mixin tablet {
     @media screen and (min-width: $tablet-width){
         @content;
     }
-
-}@mixin desktop {
+}
+@mixin desktop {
     @media screen and (min-width: $desktop-width){
         @content;
     }
-}
-
-* {
-    border: 1px dotted black;
 }
 
 html, body {
@@ -56,19 +48,16 @@ html, body {
         justify-content: flex-start;
         align-items: center;
         padding: 2.25rem;
-
         &__logo{
             width: 20%;
         }
     }
-
     @include desktop() {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         padding: 2.25rem;
     }
-
     &__logo {
         background-image: url('../assets/Logo/Logo-bandsite.svg');
         background-repeat: no-repeat;
@@ -84,18 +73,15 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
 
     @include mobile {
         justify-content: flex-end;
-
         &:hover{
-            // background-color: darken($bandsite-DarkBlack, 5%);
             border-bottom: -1.1875rem solid ($white);
             color: $white;
         }
     }
-    &__link {
+        &__link {
         text-decoration: none;
         color: $silver;
         transition: background-color 0.25s;
@@ -103,7 +89,7 @@ html, body {
         width: 50%;
         justify-content: space-evenly;
         transition: all 0.5s;
-  
+    
         @include tablet {
             font-size: 1.5rem;
           
@@ -112,7 +98,7 @@ html, body {
             color: $white;
         }
     }
-    &__button {
+        &__button {
             padding: 0.625rem;
             text-decoration: none;
             color: $silver;
@@ -122,10 +108,7 @@ html, body {
             justify-content: space-evenly;
             transition: all 0.5s;
             background-color: $bandsite-Black;
-            
            
-
-    
             @include tablet {
                 font-size: 1.5rem;
             
@@ -134,8 +117,8 @@ html, body {
                 background-color: darken($bandsite-DarkBlack, 5%);
                 border-bottom: 0.1875rem solid ($white);
                 color: $white;
-            
-            }
+               
+            } 
     }
  
     @include tablet {
@@ -148,14 +131,13 @@ html, body {
         border-bottom-right-radius: 0;
         margin-left: 2.25rem;
        
-
         &:hover{
             // background-color: darken($bandsite-DarkBlack, 5%);
             border-bottom: -1.1875rem solid ($white);
             color: $white;
         }
     }
-    &__link {
+        &__link {
         text-decoration: none;
         color: $silver;
         transition: background-color 0.25s;
@@ -164,7 +146,6 @@ html, body {
         justify-content: space-evenly;
         transition: all 0.5s;
         
-  
         @include tablet {
             font-size: 1.5rem;
         }
@@ -173,7 +154,7 @@ html, body {
             color: $white;
         }
     }
-    &__button {
+        &__button {
             padding: 0.625rem;
             text-decoration: none;
             color: $silver;
@@ -184,7 +165,7 @@ html, body {
             transition: all 0.5s;
             background-color: $bandsite-Black;
             align-items: center;
-    
+        } 
             @include tablet {
                 font-size: 1.5rem;
             }
@@ -193,7 +174,6 @@ html, body {
                 border-bottom: 0.1875rem solid ($white);
                 color: $white;
             }
-    }
     @include desktop {
        margin-left: 2.25rem;
     }
@@ -210,22 +190,17 @@ html, body {
             padding-left: 1rem;
         }
     }
-    
     @include tablet {
         font-size: 3.75rem;
         line-height: 4.25rem;
-
         &__title{
         padding-left: 2.25rem;
         margin: 0;
         }
     }
-
     @include desktop {
         font-size: 3.75rem;
         line-height: 4.25rem;
-        
-
         &__title{
         margin: 0;
         }
@@ -233,8 +208,7 @@ html, body {
     &__title {
     color: $white;
     position: absolute;
-    font-weight: 400;
-    
+    font-weight: 400; 
     }
     &__img {
         width: 100%;
@@ -271,7 +245,6 @@ html, body {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
         padding-bottom: 2.25rem;
-
         &__header{
             padding-top: 3rem;
             padding-bottom: 2.25rem;
@@ -327,7 +300,6 @@ html, body {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
         padding-bottom: 2.25rem;
-
         &__header{
             padding-top: 3rem;
             padding-bottom: 2.25rem;
@@ -406,7 +378,6 @@ html, body {
     @include mobile{
     padding-right: 1rem;
     padding-left: 1rem;
-
         &-title {
             padding-top: 1.5rem;
             padding-bottom: 1rem;
@@ -420,7 +391,6 @@ html, body {
     padding-right: 2.25rem;
     padding-left: 2.25rem;
     padding-bottom: 2.25rem;
-
         &-title {
             padding-top: 3rem;
             padding-bottom: 2.25rem;
@@ -450,7 +420,6 @@ html, body {
         padding-right: 2.25rem;
         padding-left: 2.25rem;
         padding-bottom: 2.25rem;
-
             &-title {
                 padding-top: 3rem;
                 padding-bottom: 2.25rem;
@@ -483,7 +452,6 @@ html, body {
         width: 100%;
         padding-bottom: 1rem;
     }
-
     @include desktop {
         width: 100%;
         padding-bottom: 2.25rem;
@@ -496,7 +464,6 @@ html, body {
     padding-left: 1rem;
     background: $bandsite-Black;
     color: $white;
-
         &-title{
             padding-top: 1.5rem;
             padding-bottom: 1rem;
@@ -562,7 +529,6 @@ html, body {
     padding-left: 2.25rem;
     background: $bandsite-Black;
     color: $white;
-
         &-info {
             display: flex;
             align-items: flex-end;
@@ -628,7 +594,6 @@ html, body {
         padding-left: 2.25rem;
         background: $bandsite-Black;
         color: $white;
-
             &-info {
                 display: flex;
                 align-items: flex-end;
