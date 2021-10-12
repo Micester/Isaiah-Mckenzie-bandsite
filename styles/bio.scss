@@ -165,6 +165,7 @@ html, body {
             transition: all 0.5s;
             background-color: $bandsite-Black;
             align-items: center;
+            border: none;
         } 
             @include tablet {
                 font-size: 1.5rem;

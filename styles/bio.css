@@ -149,6 +149,7 @@ html, body {
   transition: all 0.5s;
   background-color: #323232;
   align-items: center;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .nav {
