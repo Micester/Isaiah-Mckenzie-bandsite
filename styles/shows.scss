@@ -1,0 +1,414 @@
+@use 'partials/partials' as *;
+@use 'partials/mixins' as *;
+
+// Variables
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// Main colors
+$bandsite-Black: #323232;
+$silver: #AFAFAF;
+$white: #FFFFFF;
+
+//Secondary colors
+$bandsite-DarkBlack: #000000;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;
+
+@mixin mobile {
+    @media screen and (min-width: $mobile-width){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: $tablet-width){
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: $desktop-width){
+        @content;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: $bandsite-Black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2.25rem;
+        &__logo{
+            width: 20%;
+        }
+    }
+    @include desktop() {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2.25rem;
+    }
+    &__logo {
+        background-image: url('../assets/Logo/Logo-bandsite.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        max-height: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include mobile {
+        justify-content: flex-end;
+        &:hover{
+            border-bottom: -1.1875rem solid ($white);
+            color: $white;
+        }
+    }
+        &__link {
+        text-decoration: none;
+        color: $silver;
+        transition: background-color 0.25s;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+    
+        @include tablet {
+            font-size: 1.5rem;
+          
+        }
+        &:hover{
+            color: $white;
+        }
+    }
+        &__button {
+            padding: 0.625rem;
+            text-decoration: none;
+            color: $silver;
+            transition: background-color 0.25s;
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            transition: all 0.5s;
+            background-color: $bandsite-Black;
+           
+            @include tablet {
+                font-size: 1.5rem;
+            
+            }
+            &:hover{
+                background-color: darken($bandsite-DarkBlack, 5%);
+                border-bottom: 0.1875rem solid ($white);
+                color: $white;
+               
+            } 
+    }
+ 
+    @include tablet {
+        justify-content: flex-end;
+        position:absolute;
+        top: 0;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-left: 2.25rem;
+       
+        &:hover{
+            border-bottom: -1.1875rem solid ($white);
+            color: $white;
+        }
+    }
+        &__link {
+        text-decoration: none;
+        color: $silver;
+        transition: background-color 0.25s;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+        
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        &:hover{
+            color: $white;
+        }
+    }
+        &__button {
+            padding: 0.625rem;
+            text-decoration: none;
+            color: $silver;
+            transition: background-color 0.25s;
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            transition: all 0.5s;
+            background-color: $bandsite-Black;
+            align-items: center;
+            border: none;
+        } 
+            @include tablet {
+                font-size: 1.5rem;
+            }
+            &:hover{
+                background-color: darken($bandsite-DarkBlack, 5%);
+                color: $white;
+            }
+    @include desktop {
+       margin-left: 2.25rem;
+    }
+} 
+
+.hero {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        &__title {
+            color: $white;
+            position: absolute;
+            padding-left: 1rem;
+        }
+    }
+    @include tablet {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        &__title{
+        padding-left: 2.25rem;
+        margin: 0;
+        }
+    }
+    @include desktop {
+        font-size: 3.75rem;
+        line-height: 4.25rem;
+        &__title{
+        margin: 0;
+        }
+    }
+    &__title {
+    color: $white;
+    position: absolute;
+    font-weight: 400; 
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+} 
+.footer {
+    @include mobile {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background: $bandsite-Black;
+    color: $white;
+        &-title{
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            margin: 0;
+        }
+        &--info__socials{
+            list-style-type: none;
+        }
+        &-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        &-list__name2 {
+            padding-bottom: 1rem;
+        }
+        &-list__general2{
+            padding-bottom: 1rem;
+        }
+        &-list__email{
+            padding-bottom: 1rem;
+        }
+        &-logo__mobile{
+            padding-top: 1.5rem;
+        }
+        &-logo{
+            background-image: url('../assets/Logo/Logo-bandsite.svg');
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 1.25rem;    
+        }
+        &-info__instagram{
+            background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 3rem;
+            height: 3rem;     
+        }
+        &-info__facebook{
+            background-image: url(/assets/Icons/SVG/Icon-facebook.svg);    
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 3rem;
+            height: 3rem;       
+        }
+        &-info__twitter{
+            background-image: url(/assets/Icons/SVG/Icon-twitter.svg);    
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 3rem;
+            height: 3rem;
+        }
+        &-info__websites{
+            display: flex;
+        }
+        &-list{
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    @include tablet {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    background: $bandsite-Black;
+    color: $white;
+        &-info {
+            display: flex;
+            align-items: flex-end;
+            background-image: url('../assets/Logo/Logo-bandsite.svg');
+            background-repeat: no-repeat;
+            background-position: right;
+            margin-right: 1rem;
+        }
+        &-title{
+            padding-top: 3rem;
+            padding-bottom: 2.25rem;
+            margin: 0;
+            width: 33%;
+            align-items: flex-end;
+            font-size: 2.25rem;     
+        }
+        &--info__socials{
+            list-style-type: none;  
+        }
+        &-info__socials__container{
+            flex: 25%;
+            max-width: 100%;
+            padding-right: 1rem;
+        }
+        &-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0; 
+        }
+        &-info__socails__tablet{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.875rem;
+            line-height: 1.25rem;  
+        }
+        &-logo{
+            display: none;
+        }
+        &-list__name2 {
+            padding-bottom: 2.25rem;
+        }
+        &-list__general2{
+            padding-bottom: 2.25rem;
+        }
+        &-list__email{
+            padding-bottom: 2.25rem;
+        }
+        &-logo__mobile{
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem;
+        }
+        &-info__instagram{
+            background-image: url(/assets/Icons/SVG/Icon-instagram.svg);    
+            justify-content: center;
+            background-repeat: no-repeat;
+            width: 3rem;
+            height: 4rem;     
+        }
+    }
+
+    @include desktop {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        background: $bandsite-Black;
+        color: $white;
+            &-info {
+                display: flex;
+                align-items: flex-end;
+                background-image: url('../assets/Logo/Logo-bandsite.svg');
+                background-repeat: no-repeat;
+                background-position: right;
+                margin-right: 2.25rem;
+            }
+            &-title{
+                padding-top: 3rem;
+                padding-bottom: 2.25rem;
+                margin: 0;
+                width: 20%;
+                align-items: flex-end;
+                font-size: 2.25rem;
+            }
+            &--info__socials{
+                list-style-type: none;  
+            }
+            &-info__socials__container{
+                flex: 0%;
+                max-width: 18%;
+                padding-right: 1rem;
+            }
+            &-list{
+                list-style-type: none;
+                margin: 0;
+                padding: 0; 
+            }
+            &-info__socails__tablet{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 0.875rem;
+                line-height: 1.25rem;  
+            }
+            &-logo{
+                display: none;
+            }
+            &-list__name2 {
+                padding-bottom: 2.25rem;
+            }
+            &-list__general2{
+                padding-bottom: 2.25rem;
+            }
+            &-list__email{
+                padding-bottom: 2.25rem;
+            }
+            &-logo__mobile{
+                padding-top: 2.25rem;
+                padding-bottom: 2.25rem;
+            }
+            &-info__websites{
+                display: flex;
+                height: 4rem;
+            }
+        }
+}
+.copyright {
+    margin: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
