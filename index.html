@@ -142,11 +142,46 @@
 
     <!-- JTC-Section -->
     <section class="shows">
-        <h1 class="shows-title">Join the Conversation</h1>
-        <!-- Avatar picture, A promt for the user to enter their name and comment,
-            ++ a button to sumbit the comment-->
+        <form method="GET" id="order-form">
+            <h1 class="shows-title">Join the Conversation</h1>
+            <div class="form-container">
+                <label class="form-label">Name</label>
+                <input class="form-input"  name="name" type="text"
+                placeholder="Enter your name">
+                </label>
+            </div>
 
-        <!-- other users comments below user's container to put their comment  -->
+            <div class="form-container2">
+                <label class="form-label">Comment</label>
+                <input class="form-input"  name="name" type="text"
+                placeholder="Add a new comment">
+                </label>
+            </div>
+
+            <button class="shows-comment__btn">Comment</button>
+
+
+        </form>
+
+
+
+        <!-- <h1 class="shows-title">Join the Conversation</h1>
+
+        <h2 class="shows-title__username">Name</h2>
+        <input type="text" name="shows-title__username__container"  placeholder="Enter your name...">
+
+        <h2 class="shows-title__comment">Comment</h2>
+        <textarea name="shows-title__comment__container" placeholder="Add a new comment..."></textarea>
+
+        <button class="shows-comment__btn">Comment</button>
+
+        <section class="shows__container">
+            <div class="shows__container__img">
+            </div>
+            
+        </section> -->
+      
+       
 
     </section>
 

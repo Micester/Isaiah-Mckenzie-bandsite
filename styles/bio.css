@@ -436,7 +436,7 @@ html, body {
 
 .photo-img__img {
   width: 100%;
-  padding-bottom: 2.25rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .photo-img__img {
