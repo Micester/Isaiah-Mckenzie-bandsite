@@ -43,6 +43,9 @@ function listComments(){
 
 listComments();
 
+//.unshift adds stuff to the top of the array
+//possibly use that for user comments? possible I think.
+
 
 
 

@@ -452,6 +452,33 @@ html, body {
 }
 
 @media screen and (min-width: 320px) {
+  .shows {
+    padding: 1rem;
+  }
+  .shows-title {
+    font-size: 1.5rem;
+  }
+  .shows-oldComments {
+    list-style-type: none;
+  }
+  .shows-container__img {
+    vertical-align: middle;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+  }
+  .shows-container {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+  .shows-comment__btn {
+    width: 100%;
+  }
+  .shows-comments a {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 320px) {
   .footer {
     padding-right: 1rem;
     padding-left: 1rem;

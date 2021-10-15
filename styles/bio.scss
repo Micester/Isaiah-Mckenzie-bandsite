@@ -454,6 +454,44 @@ html, body {
     }
 }
 
+.shows {
+    @include mobile {
+        padding: 1rem;
+        &-title{
+            font-size: 1.5rem;
+        }
+        &-oldComments{
+            list-style-type: none;
+        }
+        &-container__img{
+            vertical-align: middle;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+        }
+        &-container{
+            display: flex;
+            padding-bottom: 1rem;
+        }
+        &-comment__btn{
+            width: 100%;
+        }
+        &-comments a{
+            justify-content: space-between;
+        }
+    
+    
+    }
+
+    @include tablet {
+
+    }
+
+    @include desktop {
+
+    }
+
+}
 
 
 .footer {
