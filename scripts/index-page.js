@@ -1,4 +1,4 @@
-const form = document.getElementById("order-form");
+const form = document.getElementById("shows-form");
 
 const comments = [
     {
@@ -18,33 +18,30 @@ const comments = [
     },
 ];
 
-const commentListElem = document.getElementById('shows-comments');
+function displayComment(){
+    for (let i=0; i<comments.length; i++){
+        //Create ELEMENT
+        const commentsName = document.createElement('p');
+        const commentsDate = document.createElement('p');
+        const commentsText = document.createElement('p');
+        
+        commentsName.classList.add('shows-comments__name');
+        commentsDate.classList.add('shows-comments__date');
+        commentsText.classList.add('shows-comments__text');
 
-function listComments(){
-    for(let i=0; i<comments.length; i++){
-        const commentElem = document.createElement('a');
-        const textElem = document.createElement('li'); 
-        const dateElem = document.createElement('a');
+       
+        commentsName.innerText = comments[i].name;
+        commentsDate.innerText = comments[i].date;
+        commentsText.innerText = comments[i].comment;
+       
 
-        console.log(dateElem);
-        console.log(textElem);
-        console.log(commentElem);
-
-        textElem.innerText = comments[i].comment;
-        commentElem.innerText = comments[i].name;
-        dateElem.innerText = comments[i].date; 
-
-        commentListElem.appendChild(commentElem);
-        commentListElem.appendChild(dateElem);
-        commentListElem.appendChild(textElem);
-    
+        form.appendChild(commentsName);
+        form.appendChild(commentsDate);
+        form.appendChild(commentsText);
     }
 }
 
-listComments();
-
-//.unshift adds stuff to the top of the array
-//possibly use that for user comments? possible I think.
+displayComment();
 
 
 

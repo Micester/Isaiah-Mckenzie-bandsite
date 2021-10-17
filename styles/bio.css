@@ -458,24 +458,49 @@ html, body {
   .shows-title {
     font-size: 1.5rem;
   }
-  .shows-oldComments {
-    list-style-type: none;
+  .shows-left {
+    display: flex;
+    flex-direction: column;
   }
-  .shows-container__img {
+  .shows-top {
+    display: flex;
+    align-items: baseline;
+  }
+  .shows-container__left__img {
     vertical-align: middle;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
+    padding: 0.75rem;
+    margin-top: 2rem;
   }
   .shows-container {
     display: flex;
-    padding-bottom: 1rem;
+    justify-content: space-evenly;
   }
-  .shows-comment__btn {
-    width: 100%;
+  .shows-bottom__container {
+    display: flex;
   }
-  .shows-comments a {
-    justify-content: space-between;
+  .shows-middle__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .shows-top__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .shows-comment__right__btn {
+    min-width: 100%;
+    height: 2.25rem;
+    border-radius: 0.25rem;
+    background-color: #323232;
+    color: #FFFFFF;
+  }
+  .shows-comments__name {
+    display: inline-block;
+  }
+  .shows-comments__date {
+    display: inline-block;
   }
 }
 @media screen and (min-width: 320px) {
