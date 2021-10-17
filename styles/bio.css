@@ -497,9 +497,13 @@ html, body {
     color: #FFFFFF;
   }
   .shows-comments__name {
+    width: 75%;
+    margin: 0;
     display: inline-block;
   }
   .shows-comments__date {
+    width: 25%;
+    margin: 0;
     display: inline-block;
   }
 }

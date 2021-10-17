@@ -501,16 +501,16 @@ html, body {
             color: $white;
         }
         &-comments__name{
+            width: 75%;
+            margin: 0 ;
             display: inline-block;
-            
         }
         &-comments__date{
+            width: 25%;
+            margin: 0 ;
             display: inline-block;
-
         }
            
-    
-   
     
     }
 

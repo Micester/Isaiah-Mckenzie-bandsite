@@ -24,7 +24,10 @@ function displayComment(){
         const commentsName = document.createElement('p');
         const commentsDate = document.createElement('p');
         const commentsText = document.createElement('p');
-        
+        var div = document.getElementById('divID');
+
+  
+
         commentsName.classList.add('shows-comments__name');
         commentsDate.classList.add('shows-comments__date');
         commentsText.classList.add('shows-comments__text');
