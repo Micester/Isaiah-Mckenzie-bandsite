@@ -497,14 +497,29 @@ html, body {
     color: #FFFFFF;
   }
   .shows-comments__name {
-    width: 75%;
+    width: 50%;
     margin: 0;
     display: inline-block;
   }
   .shows-comments__date {
-    width: 25%;
+    width: 10%;
     margin: 0;
     display: inline-block;
+  }
+  .shows-comments__text {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    margin-left: 3.5rem;
+  }
+  .shows-comments__img {
+    vertical-align: middle;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    padding: 0.75rem;
+    margin-top: 2rem;
+    color: #E1E1E1;
   }
 }
 @media screen and (min-width: 320px) {
