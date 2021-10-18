@@ -179,13 +179,25 @@ html, body {
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    
 
     @include mobile {
         &__title {
             color: $white;
             position: absolute;
             padding-left: 1rem;
+        }
+        &__container{
+            display: flex;
+            align-items: flex-end;
+        }
+        &__music{
+            position: absolute;
+            
+        }
+        &__soundcloud{
+            width: 100%;
         }
     }
     @include tablet {
