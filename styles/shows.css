@@ -232,6 +232,9 @@ html, body {
   .shows-lines {
     width: 100%;
   }
+  .shows-venue {
+    color: #AFAFAF;
+  }
 }
 
 @media screen and (min-width: 320px) {
