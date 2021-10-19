@@ -182,9 +182,11 @@ html, body {
   }
   .hero__music {
     position: absolute;
+    padding: 1rem;
   }
   .hero__soundcloud {
     width: 100%;
+    height: 7rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -222,12 +224,16 @@ html, body {
   }
   .shows-date {
     color: #AFAFAF;
+    padding-top: 1rem;
   }
   .shows-exactDate {
     font-weight: bold;
   }
   .shows-location {
     color: #AFAFAF;
+  }
+  .shows-exactLocation {
+    padding-bottom: 1rem;
   }
   .shows-btn {
     width: 100%;
@@ -238,9 +244,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    padding: 1.25rem;
   }
   .shows-lines {
-    width: 100%;
+    width: 110%;
+    margin-top: 1rem;
+    background-color: #AFAFAF;
+    margin-left: -1rem;
   }
   .shows-venue {
     color: #AFAFAF;

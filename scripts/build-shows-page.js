@@ -82,7 +82,7 @@ function display(){
     // Date / ExactDate
       const date = document.createElement('p');
       const exactDate = document.createElement('p');
-
+        
       date.classList.add('shows-date');
       date.innerText = shows[i].date;
 
