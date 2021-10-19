@@ -79,18 +79,30 @@ const shows =[
 function display(){
     for (let i=0; i<shows.length; i++){
 
+
+    //container for dates/venue/location
+      const containerDate = document.createElement('div');
+      containerDate.classList.add('shows-containerDate');
+      form.appendChild(containerDate);
+
+    //container for main
+
+      const container = document.createElement('div');
+      container.classList.add('shows-container'); 
+      form.appendChild(container);
+
     // Date / ExactDate
       const date = document.createElement('p');
       const exactDate = document.createElement('p');
-        
+
       date.classList.add('shows-date');
       date.innerText = shows[i].date;
 
       exactDate.classList.add('shows-exactDate');
       exactDate.innerText = shows[i].exactDate;
 
-      form.appendChild(date);
-      form.appendChild(exactDate);
+      containerDate.appendChild(date);
+      container.appendChild(exactDate);
 
     //  Venue / Exact Venue 
       const venue = document.createElement('p');
@@ -102,8 +114,8 @@ function display(){
       exactVenue.classList.add('shows-exactVenue');
       exactVenue.innerText = shows[i].exactVenue;
 
-      form.appendChild(venue);
-      form.appendChild(exactVenue);
+      containerDate.appendChild(venue);
+      container.appendChild(exactVenue);
 
       // Location // Exact Location
 
@@ -116,8 +128,8 @@ function display(){
       exactLocation.classList.add('shows-exactLocation');
       exactLocation.innerText = shows[i].exactLocation;
 
-      form.appendChild(location);
-      form.appendChild(exactLocation);
+      containerDate.appendChild(location);
+      container.appendChild(exactLocation);
 
       // Button
 
@@ -126,7 +138,7 @@ function display(){
       btn.classList.add('shows-btn');
       btn.innerText = shows[i].button;
 
-      form.appendChild(btn);
+      container.appendChild(btn);
   
 
       // Lines-between sections
@@ -134,6 +146,7 @@ function display(){
       const lines = document.createElement('hr');
       lines.classList.add('shows-lines');
       form.appendChild(lines);
+  
     }
 }
 

@@ -199,14 +199,23 @@ html, body {
         &__soundcloud{
             width: 100%;
             height: 7rem;
+            border: none;
         }
     }
     @include tablet {
         font-size: 3.75rem;
         line-height: 4.25rem;
+
         &__title{
         padding-left: 2.25rem;
         margin: 0;
+        }
+        &__music{
+        padding-left: 2.25rem;
+        }
+        &__soundcloud{
+            border: none;
+            width: 150%;
         }
     }
     @include desktop {
@@ -267,6 +276,24 @@ html, body {
         }
         &-venue{
             color: $silver;;
+        }
+    }
+    @include tablet{
+
+       &-container{
+           display: flex;
+           justify-content: space-evenly;
+   
+        }
+        &-containerDate{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin: 0 auto;
+            transform: translateX(-6rem);
+        }
+        &-btn{
+            width: 20%;
         }
     }
 }
