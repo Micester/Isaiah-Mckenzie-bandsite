@@ -223,6 +223,7 @@ html, body {
   .hero {
     font-size: 3.75rem;
     line-height: 4.25rem;
+    align-items: center;
   }
   .hero__title {
     margin: 0;
@@ -236,6 +237,21 @@ html, body {
 .hero__img {
   width: 100%;
   height: auto;
+}
+.hero__soundcloud {
+  width: 60%;
+  height: 12rem;
+  border: none;
+  transform: translateY(-35rem);
+  padding-left: 55rem;
+}
+.hero__subTitle {
+  padding-left: 10rem;
+}
+.hero__title {
+  padding-left: 10rem;
+  margin: 0;
+  line-height: 5rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -296,6 +312,34 @@ html, body {
   }
   .shows-lines {
     width: 100%;
+    background-color: #AFAFAF;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows-title {
+    font-size: 60px;
+    padding-left: 5rem;
+  }
+  .shows-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 15rem;
+  }
+  .shows-containerDate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 auto;
+    transform: translateX(-6rem);
+    display: none;
+  }
+  .shows-btn {
+    width: 20%;
+    font-weight: bold;
+  }
+  .shows-lines {
+    width: 70%;
+    margin-left: 25rem;
     background-color: #AFAFAF;
   }
 }
