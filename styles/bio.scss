@@ -528,7 +528,6 @@ html, body {
         }
         &-comments__name{
             width: 50%;
-            margin: 0 ;
             display: inline-block;
         }
         &-comments__date{
@@ -549,7 +548,7 @@ html, body {
             height: 2.25rem;
             border-radius: 50%;
             padding: 0.75rem;
-            margin-top: 2rem;
+            // margin-top: 2rem;
             color: $Mercury;
         }
       
@@ -602,10 +601,50 @@ html, body {
             width: 80%;
             padding-left: 3rem;
         }
+     
     }
 
     @include desktop {
 
+        &-top{
+            justify-content: center;
+        }
+        &-top__right{
+            width: 45%;
+        }
+        &-top__left{
+            padding: 0;
+            padding-top: 1.5rem;
+            width: 7%;
+        }
+        &-container__left__img{
+            width: 3rem;
+            height: 3rem;
+        }
+        &-comment__right__btn{
+            border-radius: 0.25rem;
+        }
+        &-hr{
+            width: 51%;
+            margin-bottom: 2.25rem;
+            margin-top: -0.5rem;
+       
+        }
+        &-comments__line{
+            width: 50%;
+            padding-left: 3rem;
+        }
+        &-comments__name{
+            width: 39%;
+            padding-left: 19rem;
+        }
+        &-comments__text{
+            width: 45%;
+            padding-left: 22.5rem;
+        }
+        &-comments__img{
+            transform: translateX(18rem);
+        }
     }
 
 }
