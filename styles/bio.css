@@ -548,6 +548,50 @@ html, body {
     color: #E1E1E1;
   }
 }
+@media screen and (min-width: 768px) {
+  .shows {
+    padding: 2.25rem;
+    padding-right: 4rem;
+  }
+  .shows-title {
+    font-size: 2.25rem;
+  }
+  .shows-top__left {
+    padding-left: 2.25rem;
+    width: 10%;
+  }
+  .shows-bottom__container {
+    justify-content: flex-end;
+  }
+  .shows-comment__right__btn {
+    width: 25%;
+    min-width: 0;
+  }
+  .shows-top__container__name__text-box {
+    height: 3rem;
+  }
+  .shows-comments__name {
+    width: 63%;
+    padding-left: 3rem;
+  }
+  .shows-comments__text {
+    margin: 0;
+    padding-left: 6.7rem;
+    line-height: 1.75rem;
+  }
+  .shows-comments__img {
+    vertical-align: baseline;
+  }
+  .shows-hr {
+    width: 80%;
+    margin-bottom: 2.25rem;
+    margin-top: -0.5rem;
+  }
+  .shows-comments__line {
+    width: 80%;
+    padding-left: 3rem;
+  }
+}
 @media screen and (min-width: 320px) {
   .footer {
     padding-right: 1rem;

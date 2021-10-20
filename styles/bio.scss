@@ -559,7 +559,49 @@ html, body {
     }
 
     @include tablet {
+        padding: 2.25rem;
+        padding-right: 4rem;
 
+        &-title{
+            font-size: 2.25rem;
+        }
+        &-top__left{
+            padding-left: 2.25rem;
+            width: 10%;
+        }
+        &-bottom__container{
+            justify-content: flex-end;
+        }
+        &-comment__right__btn{
+            width: 25%;
+            min-width: 0; 
+        }
+        &-top__container__name__text-box{
+            height: 3rem;
+        }
+        &-comments__name{
+            width: 63%;
+            padding-left: 3rem;
+        }
+        &-comments__text{
+            margin: 0;
+            padding-left: 6.7rem;
+            line-height: 1.75rem;
+        }
+        &-comments__img{
+           vertical-align: baseline;
+          
+        }
+        &-hr{
+            width: 80%;
+            margin-bottom: 2.25rem;
+            margin-top: -0.5rem;
+       
+        }
+        &-comments__line{
+            width: 80%;
+            padding-left: 3rem;
+        }
     }
 
     @include desktop {
