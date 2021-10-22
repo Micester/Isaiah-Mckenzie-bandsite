@@ -470,7 +470,9 @@ html, body {
 
 @media screen and (min-width: 320px) {
   .shows {
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
   }
   .shows-title {
     font-size: 1.5rem;
@@ -551,8 +553,10 @@ html, body {
     color: #FFFFFF;
   }
   .shows-comments__name {
-    width: 50%;
+    width: 58%;
     display: inline-block;
+    padding-left: 0.75rem;
+    margin: 0 auto;
   }
   .shows-comments__date {
     width: 10%;
@@ -562,19 +566,25 @@ html, body {
   .shows-comments__text {
     display: flex;
     justify-content: flex-end;
-    width: 75%;
-    margin-left: 3.5rem;
+    width: 83%;
+    padding-left: 3rem;
+    margin: 0 auto;
   }
   .shows-comments__img {
     vertical-align: middle;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
-    padding: 0.75rem;
+    transform: translateX(0.2rem);
     color: #E1E1E1;
   }
+  .shows-comments__line {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
   .shows-hr {
-    width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
