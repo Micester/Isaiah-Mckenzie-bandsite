@@ -210,6 +210,7 @@ html, body {
             border: none;
             width: 150%;
         }
+       
     }
     @include tablet {
         font-size: 3.75rem;
@@ -232,6 +233,9 @@ html, body {
             border: none;
             transform: translateY(-5rem);
         }
+        &__subTitle{
+            padding-left: 10rem;
+        }
     }
     @include desktop {
         font-size: 3.75rem;
@@ -239,6 +243,9 @@ html, body {
         align-items: center;
         &__title{
         margin: 0;
+        }
+        &__subTitle{
+            padding-left: 10rem;
         }
     }
     &__title {
@@ -258,14 +265,11 @@ html, body {
         transform: translateY(-35rem);
         padding-left: 55rem;
     }
-    &__subTitle{
-        padding-left: 10rem;
-    }
     &__title{
         padding-left: 10rem;
         margin: 0;
         line-height: 5rem;
-        }
+    }
 } 
 
 .shows {
@@ -307,6 +311,12 @@ html, body {
         }
         &-venue{
             color: $silver;;
+        }
+        &-containerDate{
+            display: flex;
+        }
+        &-container{
+            display: flex;
         }
     }
     @include tablet{

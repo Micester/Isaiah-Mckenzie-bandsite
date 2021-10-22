@@ -218,6 +218,9 @@ html, body {
     border: none;
     transform: translateY(-5rem);
   }
+  .hero__subTitle {
+    padding-left: 10rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .hero {
@@ -227,6 +230,9 @@ html, body {
   }
   .hero__title {
     margin: 0;
+  }
+  .hero__subTitle {
+    padding-left: 10rem;
   }
 }
 .hero__title {
@@ -244,9 +250,6 @@ html, body {
   border: none;
   transform: translateY(-35rem);
   padding-left: 55rem;
-}
-.hero__subTitle {
-  padding-left: 10rem;
 }
 .hero__title {
   padding-left: 10rem;
@@ -291,6 +294,12 @@ html, body {
   }
   .shows-venue {
     color: #AFAFAF;
+  }
+  .shows-containerDate {
+    display: flex;
+  }
+  .shows-container {
+    display: flex;
   }
 }
 @media screen and (min-width: 768px) {

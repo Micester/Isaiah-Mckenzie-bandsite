@@ -97,7 +97,6 @@ let name;
 form.addEventListener("Submit", function(event) {
     event.preventDefault();
 
-    // name = event.target.name.value
 
     if(event.target.name.value.includes('@')) {
         alert('not a valid name');
@@ -105,6 +104,7 @@ form.addEventListener("Submit", function(event) {
         alert('not a valid name');
     }
 
+    
 
     console.log(event.target.name.value);
     console.log(event.target.address.value);
