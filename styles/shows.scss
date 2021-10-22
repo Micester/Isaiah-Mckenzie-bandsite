@@ -301,7 +301,6 @@ html, body {
             align-items: center;
             border: none;
             padding: 1.25rem;
-   
         }
         &-lines {
             width: 110%;
@@ -318,6 +317,8 @@ html, body {
         &-container{
             display: flex;
         }
+    
+        
     }
     @include tablet{
 

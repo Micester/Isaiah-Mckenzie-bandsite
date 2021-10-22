@@ -35,6 +35,10 @@ $Alabaster: #FAFAFA;
 html, body {
     margin: 0;
     padding: 0;
+
+    @include tablet{
+        min-width: 768px;
+    }
 }
 
 .header {
@@ -180,6 +184,7 @@ html, body {
 .hero {
     display: flex;
     align-items: center;
+    position: relative;
 
     @include mobile {
         &__title {
@@ -189,6 +194,7 @@ html, body {
         }
     }
     @include tablet {
+        min-width: 768px;
         font-size: 3.75rem;
         line-height: 4.25rem;
         &__title{
@@ -206,11 +212,21 @@ html, body {
     &__title {
     color: $white;
     position: absolute;
-    font-weight: 400; 
+    font-weight: 400;
+    z-index: 1; 
+    }
+    &-img-overlay{
+    position: absolute;
+    background: $bandsite-Black;
+    width: 100%;
+    height: 100%;
+    transition: none;
+    opacity: 50%;
     }
     &__img {
         width: 100%;
         height: auto;
+        display: block;
     }
 } 
 
@@ -466,6 +482,7 @@ html, body {
             display: flex;
             flex-direction: column;
             width: 25%;
+            transform: translateY(1.5rem);
         }
         &-top{
             display: flex;
@@ -486,21 +503,27 @@ html, body {
             justify-content: space-evenly;
         }
         &-top__container__name{
-            color: $Mercury;
+            color: $silver;
         }
         &-top__container__name__text-box{
             background-color: $Mercury;
-            border-radius: 0.25rem;
             border-color: $silver;
+            border-radius: 0.25rem;
+            border: 0.0625rem;
+            height: 2.25rem;
+            margin: 0.4rem 0;
         }
         &-container__comment-box{
-            height: 8rem;
+            max-height: 8rem;
+            min-height: 8rem;
             background-color: $Mercury;
-            border-radius: 0.25rem;
             border-color: $silver;
+            border-radius: 0.25rem;
+            border: 0.0625rem;
+            margin: 0.4rem 0;
         }
         &-container__comment{
-            color: $Mercury;
+            color: $silver;
         }
         &-bottom__container{
             display: flex;
@@ -521,8 +544,9 @@ html, body {
         }
         &-comment__right__btn{
             min-width: 100%;
-            height: 2.25rem;
+            height: 2.5rem;
             border-radius: 0.25rem;
+            border: 0.0625rem;
             background-color: $bandsite-Black;
             color: $white;
         }
