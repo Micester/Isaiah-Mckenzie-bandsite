@@ -390,7 +390,7 @@ html, body {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     margin: 0;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -474,26 +474,27 @@ html, body {
   }
   .shows-title {
     font-size: 1.5rem;
+    margin: 0;
   }
   .shows-top__left {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    transform: translateY(1.5rem);
+    transform: translateY(2.5rem);
   }
   .shows-top {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
   }
   .shows-top__right {
-    width: 75%;
+    width: 100%;
+    padding-left: 0.75rem;
   }
   .shows-container__left__img {
     vertical-align: middle;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
-    padding: 0.75rem;
   }
   .shows-container {
     display: flex;
@@ -501,36 +502,38 @@ html, body {
   }
   .shows-top__container__name {
     color: #AFAFAF;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
   }
   .shows-top__container__name__text-box {
-    background-color: #E1E1E1;
-    border-color: #AFAFAF;
+    background-color: #FAFAFA;
+    border-color: #E1E1E1;
     border-radius: 0.25rem;
     border: 0.0625rem;
-    height: 2.25rem;
     margin: 0.4rem 0;
+    padding: 0.75rem;
   }
   .shows-container__comment-box {
-    max-height: 8rem;
-    min-height: 8rem;
-    background-color: #E1E1E1;
-    border-color: #AFAFAF;
+    background-color: #FAFAFA;
+    border-color: #E1E1E1;
     border-radius: 0.25rem;
     border: 0.0625rem;
     margin: 0.4rem 0;
+    padding: 0.75rem;
+    padding-bottom: 4rem;
   }
   .shows-container__comment {
     color: #AFAFAF;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
   }
   .shows-bottom__container {
     display: flex;
-    padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
   .shows-middle__container {
     display: flex;
     flex-direction: column;
-    padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
   .shows-top__container {
@@ -569,6 +572,9 @@ html, body {
     border-radius: 50%;
     padding: 0.75rem;
     color: #E1E1E1;
+  }
+  .shows-hr {
+    width: 90%;
   }
 }
 @media screen and (min-width: 768px) {
