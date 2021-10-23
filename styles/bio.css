@@ -207,6 +207,9 @@ html, body {
   color: #FFFFFF;
   position: absolute;
   font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   z-index: 1;
 }
 .hero-img-overlay {
@@ -242,9 +245,24 @@ html, body {
   .about-quote__text {
     margin: 0;
     padding-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.375rem;
   }
   .about-quote__container__text {
     padding-bottom: 1rem;
+  }
+  .about-quote__the-bees {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+  }
+  .about-quote__author {
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.375rem;
   }
 }
 @media screen and (min-width: 768px) {

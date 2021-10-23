@@ -213,6 +213,9 @@ html, body {
     color: $white;
     position: absolute;
     font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
     z-index: 1; 
     }
     &-img-overlay{
@@ -249,10 +252,28 @@ html, body {
         &-quote__text{
             margin: 0;
             padding-top: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.375rem;
         }
         &-quote__container__text{
             padding-bottom: 1rem;
         }
+        &-quote__the-bees{
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.375rem;
+        }
+        &-quote__author{
+            margin: 0;
+            padding-top: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1.375rem;
+        } 
+     
+
+
     }
 
     @include tablet {

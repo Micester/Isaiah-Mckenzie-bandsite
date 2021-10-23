@@ -11,13 +11,13 @@ const comments = [
     {
         name: 'Emilie Beach',
         date: '01/09/2021',
-        comment: 'I feel blessed to have seen them in person. What a show! They wre just perfection. If there was one day of my life i Could relive, this would be it. What an incredible day.',
+        comment: 'I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life i could relive, this would be it. What an incredible day.',
         img: './assets/Images/Mohan-muruge.jpg',
     },
     {
         name: 'Miles Acosta',
         date: '12/20/2020',
-        comment: "I can't stop listerning. Every time i hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough. ",
+        comment: "I can't stop listerning. Every time i hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
         img: './assets/Images/Mohan-muruge.jpg',
     },
 ];
