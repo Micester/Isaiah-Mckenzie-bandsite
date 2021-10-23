@@ -316,12 +316,28 @@ html, body {
     font-size: 3.75rem;
     line-height: 4.25rem;
     align-items: center;
+    width: 100%;
   }
   .hero__title {
     margin: 0;
+    transform: translateY(20rem);
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
   }
   .hero__subTitle {
-    padding-left: 10rem;
+    padding-left: 2.25rem;
+    transform: translateY(20rem);
+  }
+  .hero__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__music {
+    transform: translateX(15rem);
+    padding: 0;
+    width: 25%;
   }
 }
 
@@ -486,31 +502,88 @@ html, body {
   }
 }
 @media screen and (min-width: 1280px) {
+  .shows {
+    padding: 2.25rem;
+    padding-top: 0;
+    padding-right: 8rem;
+  }
   .shows-title {
-    font-size: 60px;
-    padding-left: 5rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 2.25rem;
+    padding-top: 3rem;
   }
   .shows-container {
     display: flex;
     justify-content: space-evenly;
-    padding-left: 15rem;
   }
   .shows-containerDate {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
     margin: 0 auto;
-    transform: translateX(-6rem);
-    display: none;
+    align-items: baseline;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    justify-content: flex-end;
   }
   .shows-btn {
-    width: 20%;
+    width: 9.375rem;
     font-weight: bold;
+    height: 2.5rem;
   }
   .shows-lines {
-    width: 70%;
-    margin-left: 25rem;
+    width: 78%;
     background-color: #AFAFAF;
+    transform: translateX(18rem);
+  }
+  .shows-date {
+    display: none;
+  }
+  .shows-venue {
+    display: none;
+  }
+  .shows-location {
+    display: none;
+  }
+  .shows-tablet__row {
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: flex-end;
+  }
+  .shows-tablet__row__invi {
+    display: none;
+  }
+  .shows-tablet__row__venue {
+    transform: translateX(1rem);
+    color: #AFAFAF;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    width: 21.5%;
+  }
+  .shows-exactDate {
+    width: 25%;
+  }
+  .shows-exactVenue {
+    width: 20%;
+  }
+  .shows-exactLocation {
+    width: 15%;
+  }
+  .shows-tablet__row__date {
+    color: #AFAFAF;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    width: 23.5%;
+  }
+  .shows-tablet__row__location {
+    color: #AFAFAF;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    width: 28.5%;
   }
 }
 
