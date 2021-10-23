@@ -3,7 +3,7 @@ const form = document.getElementById("shows-page");
 const shows =[
     {
         date: 'Date', //Dates title/ exact time
-        exactDate: 'Mon Set 06 2021',
+        exactDate: 'Mon Sept 06 2021',
 
         venue: 'Venue', //Venue title/ exact venue
         exactVenue: 'Ronald Lane',
