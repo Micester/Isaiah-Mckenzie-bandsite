@@ -51,6 +51,7 @@ html, body {
   max-height: 20px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin: 0.5rem;
 }
 
 .nav {
@@ -176,7 +177,7 @@ html, body {
     color: #FFFFFF;
     position: absolute;
     padding-left: 1rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
     z-index: 1;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -274,15 +275,30 @@ html, body {
   .shows-date {
     color: #AFAFAF;
     padding-top: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
   }
   .shows-exactDate {
     font-weight: bold;
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
   }
   .shows-location {
     color: #AFAFAF;
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
   }
   .shows-exactLocation {
     padding-bottom: 1rem;
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
   }
   .shows-btn {
     width: 100%;
@@ -304,12 +320,23 @@ html, body {
   }
   .shows-venue {
     color: #AFAFAF;
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    padding-top: 1rem;
+  }
+  .shows-exactVenue {
+    margin: 0;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
   }
   .shows-containerDate {
     display: flex;
-  }
-  .shows-container {
-    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {

@@ -92,7 +92,7 @@ function display(){
       form.appendChild(container);
 
     // Date / ExactDate
-      const date = document.createElement('p');
+      const date = document.createElement('div');
       const exactDate = document.createElement('p');
 
       date.classList.add('shows-date');
@@ -102,7 +102,7 @@ function display(){
       exactDate.innerText = shows[i].exactDate;
 
       containerDate.appendChild(date);
-      container.appendChild(exactDate);
+      containerDate.appendChild(exactDate);
 
     //  Venue / Exact Venue 
       const venue = document.createElement('p');
@@ -115,7 +115,7 @@ function display(){
       exactVenue.innerText = shows[i].exactVenue;
 
       containerDate.appendChild(venue);
-      container.appendChild(exactVenue);
+      containerDate.appendChild(exactVenue);
 
       // Location // Exact Location
 
@@ -129,7 +129,7 @@ function display(){
       exactLocation.innerText = shows[i].exactLocation;
 
       containerDate.appendChild(location);
-      container.appendChild(exactLocation);
+      containerDate.appendChild(exactLocation);
 
       // Button
 
@@ -138,7 +138,7 @@ function display(){
       btn.classList.add('shows-btn');
       btn.innerText = shows[i].button;
 
-      container.appendChild(btn);
+      containerDate.appendChild(btn);
   
 
       // Lines-between sections

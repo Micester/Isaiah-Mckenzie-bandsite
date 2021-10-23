@@ -66,6 +66,7 @@ html, body {
         max-height: 20px;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin: 0.5rem;
     }
 }
 
@@ -188,7 +189,7 @@ html, body {
             color: $white;
             position: absolute;
             padding-left: 1rem;
-            padding-top: 3rem;
+            padding-top: 4rem;
             z-index: 1;
 
             font-size: 1.5rem;
@@ -289,15 +290,32 @@ html, body {
         &-date{
             color: $silver;
             padding-top: 1rem;
+            
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            font-weight: 400;
         }
         &-exactDate{
             font-weight: bold;
+            margin: 0;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            font-weight: 600;
         }
         &-location{
             color: $silver;
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            font-weight: 400;
         }
         &-exactLocation{
             padding-bottom: 1rem;
+            margin-top: 0;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            font-weight: 600;
+            
         }
         &-btn{
             width: 100%;
@@ -320,12 +338,23 @@ html, body {
         }
         &-venue{
             color: $silver;;
+            margin: 0;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            font-weight: 400;
+            padding-top: 1rem;
+        }
+        &-exactVenue{
+            margin: 0;
+            padding-bottom: 1rem;
+            margin-top: 0;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            font-weight: 600;
         }
         &-containerDate{
             display: flex;
-        }
-        &-container{
-            display: flex;
+            flex-direction: column;
         }
     
         
