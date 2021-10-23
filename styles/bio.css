@@ -689,6 +689,7 @@ html, body {
     margin: 0;
     padding-left: 6.7rem;
     width: 80%;
+    margin-top: -1rem;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.375rem;
@@ -701,7 +702,7 @@ html, body {
     margin-top: 1rem;
   }
   .shows-top {
-    padding-top: 1rem;
+    padding-top: 2.25rem;
   }
   .shows-hr {
     width: 89%;
@@ -733,8 +734,7 @@ html, body {
   }
   .shows-top__left {
     padding: 0;
-    padding-top: 1.5rem;
-    width: 7%;
+    width: 5%;
   }
   .shows-container__left__img {
     width: 3rem;
@@ -744,24 +744,25 @@ html, body {
     border-radius: 0.25rem;
   }
   .shows-hr {
-    width: 51%;
+    width: 45%;
+    transform: translateX(2.2rem);
     margin-bottom: 2.25rem;
-    margin-top: -0.5rem;
   }
   .shows-comments__line {
-    width: 50%;
-    padding-left: 3rem;
+    width: 41%;
+    transform: translateX(2.2rem);
   }
   .shows-comments__name {
-    width: 39%;
-    padding-left: 19rem;
+    width: 40%;
+    padding-left: 20rem;
   }
   .shows-comments__text {
     width: 45%;
-    padding-left: 22.5rem;
+    padding-left: 23rem;
+    margin-top: -1rem;
   }
   .shows-comments__img {
-    transform: translateX(18rem);
+    transform: translateX(18.5rem);
   }
 }
 
