@@ -18,11 +18,20 @@ html, body {
   padding: 0;
 }
 
-.header {
-  background: #323232;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+@media screen and (min-width: 320px) {
+  .header {
+    background: #323232;
+    flex-direction: column;
+    position: relative;
+  }
+  .header__logo {
+    background-image: url("../assets/Logo/Logo-bandsite.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    max-height: 20px;
+    padding: 1.5rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -32,7 +41,10 @@ html, body {
     padding: 2.25rem;
   }
   .header__logo {
-    width: 20%;
+    width: 100%;
+    background-position: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -42,16 +54,6 @@ html, body {
     align-items: center;
     padding: 2.25rem;
   }
-}
-.header__logo {
-  background-image: url("../assets/Logo/Logo-bandsite.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
-  max-height: 20px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0.5rem;
 }
 
 .nav {
@@ -67,44 +69,53 @@ html, body {
     border-bottom: -1.1875rem solid #FFFFFF;
     color: #FFFFFF;
   }
-}
-.nav__link {
-  text-decoration: none;
-  color: #AFAFAF;
-  transition: background-color 0.25s;
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  transition: all 0.5s;
-}
-@media screen and (min-width: 768px) {
   .nav__link {
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+  }
+}
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .nav {
     font-size: 1.5rem;
   }
 }
-.nav__link:hover {
-  color: #FFFFFF;
+@media screen and (min-width: 320px) {
+  .nav:hover {
+    color: #FFFFFF;
+  }
 }
-.nav__button {
-  padding: 0.625rem;
-  text-decoration: none;
-  color: #AFAFAF;
-  transition: background-color 0.25s;
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  transition: all 0.5s;
-  background-color: #323232;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .nav__button {
-    font-size: 1.5rem;
+    padding: 0.625rem;
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    background-color: #323232;
+    border: none;
   }
 }
-.nav__button:hover {
-  background-color: black;
-  border-bottom: 0.1875rem solid #FFFFFF;
-  color: #FFFFFF;
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .nav__button {
+    font-size: 0.875rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 320px) {
+  .nav__button:hover {
+    background-color: black;
+    border-bottom: 0.1875rem solid #FFFFFF;
+    color: #FFFFFF;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -115,51 +126,44 @@ html, body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    margin-left: 2.25rem;
+    transform: translateX(10rem);
   }
   .nav:hover {
     border-bottom: -1.1875rem solid #FFFFFF;
     color: #FFFFFF;
   }
-}
-.nav__link {
-  text-decoration: none;
-  color: #AFAFAF;
-  transition: background-color 0.25s;
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  transition: all 0.5s;
-}
-@media screen and (min-width: 768px) {
   .nav__link {
-    font-size: 1.5rem;
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.25rem;
   }
-}
-.nav__link:hover {
-  color: #FFFFFF;
-}
-.nav__button {
-  padding: 0.625rem;
-  text-decoration: none;
-  color: #AFAFAF;
-  transition: background-color 0.25s;
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  transition: all 0.5s;
-  background-color: #323232;
-  align-items: center;
-  border: none;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    font-size: 1.5rem;
+  .nav:hover {
+    color: #FFFFFF;
   }
-}
-.nav:hover {
-  background-color: black;
-  color: #FFFFFF;
+  .nav__button {
+    padding: 2rem;
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    background-color: #323232;
+    align-items: center;
+    border: none;
+  }
+  .nav__button:hover {
+    background-color: black;
+    color: #FFFFFF;
+  }
 }
 @media screen and (min-width: 1280px) {
   .nav {
