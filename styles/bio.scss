@@ -456,6 +456,8 @@ html, body {
             font-size: 2.25rem;
             line-height: 2.75rem;
             font-weight: 700;
+            padding-bottom: 2.25rem;
+            padding-top: 3rem;
         }
         &-imgs {
             display: flex;
@@ -643,6 +645,10 @@ html, body {
     }
 
     @include tablet {
+        padding-right: 2.25rem;
+        padding-left: 2.25rem;
+        padding-top: 3rem;
+
         &-title{
             font-size: 2.25rem;
         }
