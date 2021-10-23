@@ -120,7 +120,7 @@ html, body {
             @include tablet {
                 font-size: 0.875rem;
                 line-height: 2rem;
-                font-weight: 600;
+                font-weight: bold;
             
             }
             &:hover{
@@ -130,25 +130,78 @@ html, body {
                
             } 
         }
-        
+    }
+    @include tablet {
+        justify-content: flex-end;
+        position:absolute;
+        top: 0;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transform: translateX(10rem);
+   
+    &:hover{
+        border-bottom: -1.1875rem solid ($white);
+        color: $white;
     }
 
- 
-    @include tablet {
-            justify-content: flex-end;
-            position:absolute;
-            top: 0;
-            height: 100%;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            transform: translateX(10rem);
-       
+    &__link {
+        text-decoration: none;
+        color: $silver;
+        transition: background-color 0.25s;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.25rem;
+    }
+
+    &:hover{
+        color: $white;
+    }
+
+    &__button {
+        padding: 2rem;
+        text-decoration: none;
+        color: $silver;
+        transition: background-color 0.25s;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+        background-color: $bandsite-Black;
+        align-items: center;
+        border: none;
+    
+        &:hover{
+            background-color: darken($bandsite-DarkBlack, 5%);
+            color: $white;
+        }
+    }
+    
+
+
+
+
+    @include desktop {
+        justify-content: flex-end;
+        position:absolute;
+        top: 0;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transform: translateX(10rem);
+
         &:hover{
             border-bottom: -1.1875rem solid ($white);
             color: $white;
         }
-    
+
         &__link {
             text-decoration: none;
             color: $silver;
@@ -158,15 +211,15 @@ html, body {
             justify-content: space-evenly;
             transition: all 0.5s;
 
-            font-size: 0.75rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: bold;
             line-height: 1.25rem;
         }
 
         &:hover{
             color: $white;
         }
-    
+
         &__button {
             padding: 2rem;
             text-decoration: none;
@@ -179,21 +232,15 @@ html, body {
             background-color: $bandsite-Black;
             align-items: center;
             border: none;
-        
+
             &:hover{
                 background-color: darken($bandsite-DarkBlack, 5%);
                 color: $white;
             }
         }
-        
-
-    }
-
-
-    @include desktop {
-       margin-left: 2.25rem;
     }
 } 
+}
 
 
 .hero {

@@ -107,7 +107,7 @@ html, body {
   .nav__button {
     font-size: 0.875rem;
     line-height: 2rem;
-    font-weight: 600;
+    font-weight: bold;
   }
 }
 @media screen and (min-width: 320px) {
@@ -140,8 +140,8 @@ html, body {
     width: 50%;
     justify-content: space-evenly;
     transition: all 0.5s;
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: bold;
     line-height: 1.25rem;
   }
   .nav:hover {
@@ -165,9 +165,52 @@ html, body {
     color: #FFFFFF;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   .nav {
-    margin-left: 2.25rem;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: translateX(10rem);
+  }
+  .nav:hover {
+    border-bottom: -1.1875rem solid #FFFFFF;
+    color: #FFFFFF;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+  }
+  .nav:hover {
+    color: #FFFFFF;
+  }
+  .nav__button {
+    padding: 2rem;
+    text-decoration: none;
+    color: #AFAFAF;
+    transition: background-color 0.25s;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    background-color: #323232;
+    align-items: center;
+    border: none;
+  }
+  .nav__button:hover {
+    background-color: black;
+    color: #FFFFFF;
   }
 }
 
