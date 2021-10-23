@@ -223,7 +223,7 @@ html, body {
 
             font-size: 0.875rem;
             line-height: 1.375rem;
-            font-weight: 600;
+            font-weight: 400;
             z-index: 1;
         }
         &__img {
@@ -328,11 +328,10 @@ html, body {
             font-weight: 400;
         }
         &-exactLocation{
-            padding-bottom: 1rem;
             margin-top: 0;
             font-size: 0.875rem;
             line-height: 1.375rem;
-            font-weight: 600;
+            font-weight: 400;
             
         }
         &-btn{
@@ -347,6 +346,9 @@ html, body {
             align-items: center;
             border: none;
             padding: 1.25rem;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            font-weight: 600;
         }
         &-lines {
             width: 110%;
@@ -368,7 +370,7 @@ html, body {
             margin-top: 0;
             font-size: 0.875rem;
             line-height: 1.375rem;
-            font-weight: 600;
+            font-weight: 400;
         }
         &-containerDate{
             display: flex;
