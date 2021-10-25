@@ -1,3 +1,86 @@
+//Could not post comments
+
+// const commentSection = document.getElementById("shows-comments");
+
+
+// const apiUrlComments = `https://project-1-api.herokuapp.com/comments?api_key=228c1608b6-4e2f-42ca-a9f8-6cb9fa7bb936`;
+// const apiUrlDates = `https://project-1-api.herokuapp.com/showdates?api_key=%228c1608b6-4e2f-42ca-a9f8-6cb9fa7bb936%22`;
+
+// form.addEventListener('submit', getComments);
+
+// function getComments() {
+//     axios
+//         .get(`${apiUrlComments}/comments`)
+//         .then((response)=>{
+//             console.log('commets data', response);
+    
+//             const userComments = response.data.sort(
+//                 (a,b) => new Date(b.timestamp) - new Date(a.timestamp)
+//             );
+    
+//             commentSection.innerHTML = '';
+
+//             userComments.forEach((comment) =>{
+//                 const commentsBox = document.createElement('li');
+//                 const commentsName = document.createElement('p');
+
+//                 commentsName.innerText = comment.name;
+//                 commentsName.classList.add('shows-comments__name');
+
+//                 const commentsTimestamp = document.createElement('p');
+
+//                 commentsTimestamp.innerText = new Date(Date).toLocaleDateString();
+//                 commentsTimestamp.classList.add('shows-comments__date');
+
+//                 const commentsComment = document.createElement('p');
+
+//                 commentsComment.innerText = comment.comment;
+//                 commentsComment.classList.add('shows-comments__text');
+
+               
+//                commentSection.appendChild(commentsBox);
+
+//                commentsBox.appendChild(commentsName);
+//                commentsBox.appendChild(commentsTimestamp);
+//                commentsBox.appendChild(commentsComment);
+//             });
+    
+//         })
+//         .catch(()=>{
+//             console.log('error getting data from API');
+//         });
+
+// }
+
+// //get new comments
+
+// function handleNewComments(event) {
+//     event.preventDefault();
+//     //create new comment object
+//     const newComment = {
+//         name: event.target.name.value,
+//         comment: event.target.text.value,
+//     };
+//     //post new joke
+//     axios
+//         .post(`${apiUrlComments}/comments?api_key=228c1608b6-4e2f-42ca-a9f8-6cb9fa7bb936`, newComment)
+//         .then((response) => {
+//             console.log(response);
+//             getComments();
+ 
+//         })
+//         .catch(() => console.log('error posint to api'));
+//         event.target.reset();
+ 
+// }
+
+// //start app
+
+// function init() {
+//     getComments();
+// }
+
+// init();
 const form = document.getElementById("shows-form");
 
 const comments = [
@@ -78,22 +161,6 @@ displayComment();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let name; 
-
 form.addEventListener("Submit", function(event) {
     event.preventDefault();
 
@@ -107,6 +174,6 @@ form.addEventListener("Submit", function(event) {
     
 
     console.log(event.target.name.value);
-    console.log(event.target.address.value);
+    console.log(event.target.text.value);
     form.reset();
 });
